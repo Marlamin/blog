@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Giscus from '@giscus/react';
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -57,6 +58,20 @@ const BlogPostTemplate = ({
           </li>
         </ul>
       </nav>
+      <hr />
+      <Giscus 
+        repo="marlamin/blog"
+        repoId="R_kgDOL4fp1g"
+        category="Announcements"
+        categoryId="DIC_kwDOL4fp1s4CfNLQ"
+        mapping="pathname"
+        strict="0"
+        reactionsEnabled="0"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="noborder_light"
+        lang="en"
+      />
     </Layout>
   )
 }
