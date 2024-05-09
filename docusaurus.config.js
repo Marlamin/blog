@@ -64,7 +64,7 @@ const config = {
         title: 'Marlamin\'s Blog',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.jpg',
         },
         items: [
           // {to: '/', label: 'Blog', position: 'left'},
