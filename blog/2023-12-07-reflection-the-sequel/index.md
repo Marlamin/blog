@@ -3,6 +3,7 @@ slug: reflection-the-sequel
 title: Reflection (the sequel)
 authors: marlamin
 tags: [google-docs-import, life-updates]
+enableComments: true
 ---
 _This is an import of the Reflection (2023) post I made on Google Docs for archival purposes._
 
