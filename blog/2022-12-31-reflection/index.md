@@ -9,6 +9,8 @@ _This is an import of the Reflection (2022) post I made on Google Docs for archi
 
 I wrote this document primarily for myself to reflect on the time I've spent working on WoW things by walking through them (or most of them) and my decision on throwing in the towel when it comes to public datamining and actively maintaining and supporting WoW.tools. I [ran a Twitter poll](https://twitter.com/Marlamin/status/1589042690217639937) to see if people cared to see this document/properly write it out and 89% of 128 people wanted to, so here it is. I might still add things/change/clarify stuff over time, but I wanted to get this out before the end of the year. If I do update things I'll be sure to mention what/where.
 
+<!--truncate-->
+
 ### Intro
 I started working on WoW projects many many years ago, eventually leading to making the archive at marlamin.com/archive/, then bnet.marlam.in. Combined with my interest in the development of such a huge game, the making of tools and making that process easily observable, that led to WoW.tools.
 

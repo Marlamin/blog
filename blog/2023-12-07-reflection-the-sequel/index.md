@@ -9,8 +9,9 @@ _This is an import of the Reflection (2023) post I made on Google Docs for archi
 
 1 year ago in December 2022, [after collecting input on Twitter](https://twitter.com/Marlamin/status/1589042690217639937) I posted [this](https://docs.google.com/document/d/1sO4Gy56UxFqTDii7fdKW3xXRjwifD1papPAyTrd7gCc/edit) to reflect on changes I had gone through up to that year around datamining as well as to some of the reasoning why I made the changes I did. It was very therapeutic to write at the time so why not write a sequel? A lot of this is as a continuation of what I wrote last year, so you might want to read through that to get an idea of where I was at the time.
 
-Ironically, I am once again recovering from being sick while writing this (but COVID round two now, not the flu like last time) and my sleep schedule is in the drain, so instead of having insomnia while coughing up my lungs I decided to grab a laptop instead (this does not however fix either the insomnia or coughing, but at least I'll feel useful).
+<!--truncate-->
 
+Ironically, I am once again recovering from being sick while writing this (but COVID round two now, not the flu like last time) and my sleep schedule is in the drain, so instead of having insomnia while coughing up my lungs I decided to grab a laptop instead (this does not however fix either the insomnia or coughing, but at least I'll feel useful).
 
 ### Updates on the various projects
 I ended the post last time around with an update on/looking forward to the various projects I still (expected to) work on so I thought it was fitting to start off with that and how that has gone. I still don't want anyone (particularly artists/devs, which includes me) to suffer by no alternatives being available for some of the things wow.tools did and making sure that doesn't happen is still the primary, and somewhat selfish, end goal.
