@@ -75,6 +75,10 @@ const config = {
           // },
         ],
       },
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true,
+      },
       footer: {
         style: 'dark',
         links: [
