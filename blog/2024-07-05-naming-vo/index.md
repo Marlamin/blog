@@ -4,6 +4,7 @@ title: Naming WoW's VO audio
 authors: marlamin
 tags: [wow, world-of-warcraft, datamining, wow-tools]
 enableComments: true
+image: https://marlam.in/u/chrome_uRyfiCdSDq.png
 ---
 This is the first post in a series of posts I plan to make around datamining and what goes into various parts of it. Off we go!
 
