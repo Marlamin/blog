@@ -4,10 +4,11 @@ title: My wishlist for WoW
 authors: marlamin
 tags: [wow, world-of-warcraft]
 enableComments: true
+image: https://old.wow.tools/pub/wow-wishlist-blog.png
 ---
 What if you could change anything about WoW and you didn't have to care about all the things Blizzard has to care about like dev resources, player reception, future content, backwards compatibility and all that. Just complete freedom with no consequences whatsoever. 
 
-It's a fun thought experiment that will yield very different results depending on who you ask. Hell, most of the things I list probably 99% of the playerbase won't care for, but in this context, we don't actually have to care! Either way, here goes.
+It's a fun thought experiment that will yield very different results depending on who you ask. Hell, most of the things I list probably 99% of the playerbase won't care for, but in this context, we don't actually have to care! Many ideas here aren't necessarily mine either but stuff the community has talked about for ages. Either way, here goes.
 
 <!-- truncate -->
 
@@ -53,12 +54,14 @@ There's obviously more stuff I can mention here but I don't want this to be the 
 - The WotLK dance studio/flying combat
 - Farahlon
 
-## Living World
+Enough cut content, moving on to things that don't already exist!
+
+## Making a Living World
 Don't just make the latest continent/content attractive to go and do, obviously recent content should be the priority for a healthy story flow, but also regularly freshen up old zones by doing Arathi-like reworks and adding world quests/other reasons to go back to old zones. Maybe add some community efforts with higher rewards/serverwide effects in there as well to allow for the rebuilding of certain places and maybe the destruction of others to keep that dynamic going forward. Hopefully things like these would breath some life back into the old/existing world. 
 
 As for not wanting to change things to much, terrain phasing could be used for people to go back to the older versions of zones similar to how it is used today in e.g. Silithus. Or alternatively, keep these zone as is in "Classic" versions of the game and only do stuff like this in Season of Discovery or Retail. 
 
-## Customization
+## More customization
 ### Dyes
 Dyable *(dyeable? whatever.)* parts of models! Whether or not it be character customization (hair, eyes, tattoos, base clothing, etc) or item models (armor, weapons, etc) I think some sort of system where parts of models are dyable using color wheels would be cool. Some things could even have replacable primary and secondary colors or even some sort of gradient system.   
 
@@ -116,7 +119,7 @@ Make some of the things Total RP does built-in to the game. Blizzard has already
 #### Better moderation
 More humans, less automation. Additional written out rules one has to agree to on roleplaying servers that are actually actively enforced. 
 
-### Outro
+## Outro
 Given more time than the 2 hours I wrote this in, I could probably go on and come up with more stuff, but there's an expansion release looming and I want to get some sleep before that (and I don't think this post would see the light of day if I delayed it to post-release).
 
 I'm very curious to see what the wishlist of other people looks like if they had infinite freedom. Drop a comment below, let me know on Twitter, or even link to a Google doc if you are as long-winded as I am. 
