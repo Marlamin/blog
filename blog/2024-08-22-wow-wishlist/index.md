@@ -119,6 +119,9 @@ Make some of the things Total RP does built-in to the game. Blizzard has already
 #### Better moderation
 More humans, less automation. Additional written out rules one has to agree to on roleplaying servers that are actually actively enforced. 
 
+#### More
+There's definitely more things I could mention (e.g. access to more emotes/animations), but I don't want to repeat too many of the things from [this excellent thread and linked document](https://us.forums.blizzard.com/en/wow/t/the-rp-community-megathread/1149221) that members of the RP community wrote up for the WoW Community Council as many of the things they mention in the Google doc under "New Features" are things I'd like to see as well, some of which I've already talked about earlier in the post as well.
+
 ## Outro
 Given more time than the 2 hours I wrote this in, I could probably go on and come up with more stuff, but there's an expansion release looming and I want to get some sleep before that (and I don't think this post would see the light of day if I delayed it to post-release).
 
