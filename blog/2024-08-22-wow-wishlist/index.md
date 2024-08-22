@@ -125,6 +125,6 @@ There's definitely more things I could mention (e.g. access to more emotes/anima
 ## Outro
 Given more time than the 2 hours I wrote this in, I could probably go on and come up with more stuff, but there's an expansion release looming and I want to get some sleep before that (and I don't think this post would see the light of day if I delayed it to post-release).
 
-I'm very curious to see what the wishlist of other people looks like if they had infinite freedom. Drop a comment below, let me know on Twitter, or even link to a Google doc if you are as long-winded as I am. 
+I'm very curious to see what the wishlist of other people looks like if they had infinite freedom. Drop a comment below, [let me know in the Twitter replies](https://x.com/Marlamin/status/1826512011171110967), or even link to a Google doc if you are as long-winded as I am. 
 
 If you got this far, thanks for reading!
