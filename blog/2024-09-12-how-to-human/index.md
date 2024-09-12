@@ -2,7 +2,7 @@
 slug: how-to-human
 title: How do I plan ahead?
 authors: marlamin
-tags: [life]
+tags: [life, rants]
 enableComments: true
 ---
 
