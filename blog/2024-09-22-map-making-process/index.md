@@ -24,7 +24,7 @@ With the assets that have been made and rough idea, some designers make little '
 #### Layout
 The exterior design team will start making rough 2D maps of the area with a rough sketch first and then a more detailed map with a grid overlay per ADT to get a size indication.
 <img src='https://marlam.in/u/vlc_qiqoU5zhJb.png' style={{width: '50%', float: 'left'}}></img><img src='https://marlam.in/u/vlc_EdtwCoepbR.png' style={{width: '50%'}}></img>
-_Revendreth maps from the "[Designers at Work: World of Warcraft World Creation](https://youtu.be/NRS9jjU9IrI)" panel @ BlizzCon 2019._
+_Maldraxxus maps from the "[Designers at Work: World of Warcraft World Creation](https://youtu.be/NRS9jjU9IrI)" panel @ BlizzCon 2019._
 
 ### Rough sculpting/blockout
 In recent years, we've noticed that Blizzard sometimes appears to start out by just 'printing' the 2D layout maps onto terrain, and then sculpting it from there on out.
@@ -38,13 +38,17 @@ In recent years, we've noticed that Blizzard sometimes appears to start out by j
 - artstation pics/comparisons?
 
 ### Object placement
+- asset kits
 
 ### Refined texturing
+- artstation pics/comparisons?
 
 ### Vertex painting
+- artstation pics/comparisons?
 
 ### Post processing/color grading/fogs/etc
-
+- colorgrading before/after
+- modern volumetric fog before/after 
 
 ### Resources
 #### BlizzCon panels
