@@ -87,6 +87,8 @@ In recent years, we've noticed that Blizzard sometimes appears to start out by j
 - [Development map (map 451)](https://old.wow.tools/maps/development/116/2/-64.000/64.000)
 - [LevelDesignLand-DevOnly](https://old.wow.tools/maps/LevelDesignLandDevOnly/168/2/-63.000/63.000)
 
+### Videos
+- [Exploration museum](https://youtu.be/RTfo_kO71Ag?t=556), shows off multiple developer maps
 - [10.2 Emerald Dream developer map exploration](https://www.youtube.com/watch?v=Hic1FXto3fE), this video by Dovah shows off a lot of their various processes and is relatively recent. This dev map is also shown off in this officially released [Building Azeroth episode](https://x.com/Warcraft/status/1727024280666251772).
 
 ## Credits
