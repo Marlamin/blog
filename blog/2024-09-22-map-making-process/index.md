@@ -47,14 +47,20 @@ The exterior design team, likely in collaboration with the quest designers etc w
 _Maldraxxus maps from the "[Designers at Work: World of Warcraft World Creation](https://youtu.be/NRS9jjU9IrI)" panel @ BlizzCon 2019._
 - https://media.mmo-champion.com/images/news/2014/october/ac302.jpg (Ely Cannon)
 - https://cdnb.artstation.com/p/assets/images/images/079/931/553/4k/josh-navarro-tww-01.jpg?1726185336 https://www.artstation.com/artwork/NqGRlD (Josh Navarro)
+- https://cdnb.artstation.com/p/assets/images/images/056/915/093/large/josh-navarro-df-artstation-47.jpg?1670397301 https://www.artstation.com/artwork/PeP0BB (Josh Navarro)
 
 ## Rough sculpting/blockout
-In recent years, we've noticed that Blizzard sometimes appears to start out by just 'printing' the 2D layout maps onto terrain, and then sculpting it from there on out.
+In recent years, we've noticed that Blizzard sometimes appears to start out by just 'printing' the 2D layout maps onto terrain, and then sculpting it from there on out. 
+
+Printed maps:
+- zaralek: https://old.wow.tools/pub/dragonislesdevmap.jpg
+- tww devmap: https://old.wow.tools/pub/mapv1.png
+
+Blockouts:
 - https://cdnb.artstation.com/p/assets/images/images/079/931/587/4k/josh-navarro-tww-12.jpg?1726185440 https://www.artstation.com/artwork/NqGRlD (Josh Navarro)
-- zaralek, tww devmap
 
 ## Rough texturing 
-- artstation pics/comparisons?
+- artstation pics/comparisons? https://www.artstation.com/artwork/Xn5xAw
 - dh acquisition scenario 
 - bfa level design map
 - nazjatar
@@ -67,16 +73,23 @@ Making of kit layouts and then placing in the actual world (usually while assets
 
 ## Refined texturing
 - artstation pics/comparisons?
+- bfa level design map
+- df alpha worldmap https://old.wow.tools/pub/earlydf.jpg
 
 ## Vertex painting
 - artstation pics/comparisons?
+- bfa level design map
 
 ## Post processing/color grading/fogs/etc
 - colorgrading before/after
 - modern volumetric fog before/after 
 
 ## Resources
-### BlizzCon panels
+### Panels
+- BlizzCon 2009: [Cataclysm Zone Creation video](https://youtu.be/3FjuEPnuKtU)
+- Game Design Expo 2011: [The Big Picture: Macro Design in World of Warcraft](https://www.youtube.com/watch?v=-Y6DIED8R4M)
+- BlizzCon 2016: [World of Warcraft: Level Design](https://www.youtube.com/watch?v=eYDd3T_s1zo)
+- BlizzCon 2017: [DesignCraft: Building Blocks of Level Design](https://www.youtube.com/watch?v=K-D2vuKMQhk)
 - BlizzCon 2019: [Designers at Work: World of Warcraft World Creation](https://youtu.be/NRS9jjU9IrI)
 
 ### Art posts 
@@ -85,6 +98,12 @@ Making of kit layouts and then placing in the actual world (usually while assets
 - [Artcraft: Level Design Part 1](https://www.mmo-champion.com/threads/1618608-Artcraft-Level-Design-Part-1) (Nagrand)
 - [Artcraft: Level Design Part 2](https://www.mmo-champion.com/threads/1619788-Artcraft-Level-Design-Part-2-Oct-28-Hotfixes-Anti-Exploit-Mechanic-Ashran-Event) (Nagrand)
 - [Artcraft: Level Design Part 3](https://www.mmo-champion.com/threads/1620249-Artcraft-Level-Design-Part-3) (Nagrand)
+- [BfA Art Blast: Dungeon & Environment art](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-dungeon-environment-art/)
+- [BfA Art Blast: Prop Art & Level Design](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-level-design-props/)
+- [BfA Art Blast: Visual Development & Environments](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-visual-development-environments/)
+- [Shadowlands Art Blast: Part One](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-one/)
+- [Shadowlands Art Blast: Part Two](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-two/)
+- [Dragonflight Art Blast](https://magazine.artstation.com/2022/12/blizzard-entertainment-world-of-warcraft-dragonflight-art-blast/)
 - [War Within Artstation Art Blast](https://magazine.artstation.com/2024/09/blizzard-entertainment-world-of-warcraft-the-war-within/) 
 
 ### Maps
@@ -94,6 +113,9 @@ Making of kit layouts and then placing in the actual world (usually while assets
 ### Videos
 - [Exploration museum](https://youtu.be/RTfo_kO71Ag?t=556), shows off multiple developer maps
 - [10.2 Emerald Dream developer map exploration](https://www.youtube.com/watch?v=Hic1FXto3fE), this video by Dovah shows off a lot of their various processes and is relatively recent. This dev map is also shown off in this officially released [Building Azeroth episode](https://x.com/Warcraft/status/1727024280666251772).
+
+### Interviews
+- https://80.lv/articles/the-strings-of-environment-design/
 
 ## Credits
 I've credited all the artists where I could
