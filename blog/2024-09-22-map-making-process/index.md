@@ -38,7 +38,7 @@ Based on those concepts, artists start working on buildings, props, foliage and 
 ## Demo zones
 With zone concepts and the first rough assets rolling in, exterior designers will start to make demo zones or 'dioramas' using the assets they have to get a feel for the zone. 
 - pics from 10.2 devmap?
-- nazjatar https://old.wow.tools/maps/Nazjatar/689/6/-11.261/6.200
+- nazjatar https://old.wow.tools/maps/Nazjatar/689/6/-11.261/6.200 (note how it was used in the blizzcon vid)
 - argus https://map.wow.tools/?map=Argus%201&v=471&z=6&lat=-4.391&lng=48.859
 
 ## Layout
@@ -84,13 +84,18 @@ _Early Draenor blockout with some very early subzone experimentation. Click for 
 - artstation pics/comparisons? https://www.artstation.com/artwork/Xn5xAw
 - dh acquisition scenario 
 - bfa level design map
-- nazjatar
+- nazjatar https://old.wow.tools/maps/Nazjatar/689/6/-11.261/6.200 and https://old.wow.tools/maps/nazjatar_unused/1345/6/-13.105/12.434
 
 ## Kit placement
-Making of kit layouts and then placing in the actual world (usually while assets are still WIP)
-- 10.2 devmap https://old.wow.tools/pub/2566_rs.jpg
-- shadowlands https://old.wow.tools/maps/2222/857/7/-21.105/8.262
-- nazjatar https://old.wow.tools/maps/Nazjatar/689/6/-11.261/6.200 and https://old.wow.tools/maps/nazjatar_unused/1345/6/-13.105/12.434
+Exterior designers usually make spots on maps or related maps that have the kit for a certain zone/race that they'll be using throughout the map. 
+
+Some uses like making it easy to copy/paste assets from the kit into the map seem obvious, but it's possibly also during asset development to keep an eye on what is finished/not or what needs cutting if it ended up being unused (as can be seen in the examples below).
+
+<a href='https://old.wow.tools/pub/2566_rs.jpg' target='_BLANK'><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/chrome_UNDdC2Abwh.png'></img><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/GKG9nhMKR1.png'></img></a>
+_10.2 asset kits (with an image printed on the map naming it). Click for *VERY* high-res image of full map._
+
+<a href='https://map.wow.tools/?map=2222&v=857&z=7&lat=-21.265&lng=7.297' target='_BLANK'><img src='https://marlam.in/u/6rCZZqxGoq.png'></img></a>
+_Early Shadowlands kit for The Maw showing similar statuses to the 10.2 kit. Click for minimap viewer._
 
 ## Refined texturing
 - artstation pics/comparisons?
