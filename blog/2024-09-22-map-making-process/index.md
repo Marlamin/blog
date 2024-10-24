@@ -42,7 +42,7 @@ With zone concepts and the first rough assets rolling in, exterior designers wil
 - argus https://map.wow.tools/?map=Argus%201&v=471&z=6&lat=-4.391&lng=48.859
 
 ## Layout
-The exterior design team, likely in collaboration with the quest designers etc will start making rough 2D maps of the zone in e.g. Adobe Illustrator with to give an idea of the basic layout and scale of the zone (optionally with a grid overlay per ADT, or what Blizz calls them, "world chunks", to get a good indication for scale) and then a more detailed map with more roads, POIs and sometimes even basic terrain colors for the various biomes. 
+The exterior design team, in collaboration with the quest designers etc will start making rough 2D maps of the zone in e.g. Adobe Illustrator with to give an idea of the basic layout and scale of the zone (optionally with a grid overlay per ADT, or what Blizz calls them, "world chunks", to get a good indication for scale) and then a more detailed map with more roads, POIs and sometimes even basic terrain colors for the various biomes. 
 
 Some designers might prefer blocking out in 3D instead, but historically Blizzard prefers and internally recommends 2D concepting first as those maps are easier to share between the teams (as per Cory Stockton during his Game Design Expo talk linked below).
 
@@ -118,7 +118,17 @@ Whether or not this is still done in their current design process I don't know (
 <img src='https://marlam.in/u/chrome_Fby3CDOzzL.png' style={{width: '50%', float: 'left'}}></img><img src='https://marlam.in/u/chrome_omzDx8glX7.png' style={{width: '50%'}}></img>
 _Tol Barad maps without and with minimap overlay for verification from the "[The Big Picture: Macro Design in World of Warcraft](https://www.youtube.com/watch?v=-Y6DIED8R4M)" panel @ Game Design Expo 2011._ 
 
-## Case Study: Nazjatar 
+## Examples
+These examples of both Argus and Nazjatar span multiple of the above steps, so I've separated them.
+
+### Argus timeline
+Blizzard showed off a timeline video of the development of the "Krokuun" subzone of Argus during BlizzCon 2017. I took the liberty to cut out the low-res timeline and stitch it together with the high-res minimaps we got during the 7.3 PTR. 
+
+While the original video is very low-res, the minimaps are high-res so I suggest watching it in full screen and maybe even slower than I already slowed it down to.
+
+<iframe src="//www.youtube.com/embed/XG9lmk-rioc" frameborder="0" allowfullscreen="allowfullscreen" width="100%" height="500"></iframe>
+
+### Nazjatar 
 Nazjatar is a map we have a particularly interesting iterations of. It does not follow all of the same modern design processes that they currently seem to (no printable 2D maps for one), but it's still interesting to look at.
 
 todo: concept art
@@ -139,18 +149,18 @@ retail map: https://map.wow.tools/?map=Nazjatar&v=732&z=6&lat=-12.973&lng=8.125
 - BlizzCon 2019: [Designers at Work: World of Warcraft World Creation](https://youtu.be/NRS9jjU9IrI)
 
 ### Art posts 
-- [Artcraft: Building a Garrison](https://www.mmo-champion.com/threads/1456578-Artcraft-Building-a-Garriso)
-- [Artcraft: Spires of Arak](https://www.mmo-champion.com/threads/1512774-Artcraft%E2%80%94The-Spires-of-Arak)
-- [Artcraft: Level Design Part 1](https://www.mmo-champion.com/threads/1618608-Artcraft-Level-Design-Part-1) (Nagrand)
-- [Artcraft: Level Design Part 2](https://www.mmo-champion.com/threads/1619788-Artcraft-Level-Design-Part-2-Oct-28-Hotfixes-Anti-Exploit-Mechanic-Ashran-Event) (Nagrand)
-- [Artcraft: Level Design Part 3](https://www.mmo-champion.com/threads/1620249-Artcraft-Level-Design-Part-3) (Nagrand)
-- [BfA Art Blast: Dungeon & Environment art](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-dungeon-environment-art/)
-- [BfA Art Blast: Prop Art & Level Design](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-level-design-props/)
-- [BfA Art Blast: Visual Development & Environments](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-visual-development-environments/)
-- [Shadowlands Art Blast: Part One](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-one/)
-- [Shadowlands Art Blast: Part Two](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-two/)
-- [Dragonflight Art Blast](https://magazine.artstation.com/2022/12/blizzard-entertainment-world-of-warcraft-dragonflight-art-blast/)
-- [War Within Artstation Art Blast](https://magazine.artstation.com/2024/09/blizzard-entertainment-world-of-warcraft-the-war-within/) 
+- (2014) [Artcraft: Building a Garrison](https://www.mmo-champion.com/threads/1456578-Artcraft-Building-a-Garriso)
+- (2014) [Artcraft: Spires of Arak](https://www.mmo-champion.com/threads/1512774-Artcraft%E2%80%94The-Spires-of-Arak)
+- (2014) [Artcraft: Level Design Part 1](https://www.mmo-champion.com/threads/1618608-Artcraft-Level-Design-Part-1) (Nagrand)
+- (2014) [Artcraft: Level Design Part 2](https://www.mmo-champion.com/threads/1619788-Artcraft-Level-Design-Part-2-Oct-28-Hotfixes-Anti-Exploit-Mechanic-Ashran-Event) (Nagrand)
+- (2014) [Artcraft: Level Design Part 3](https://www.mmo-champion.com/threads/1620249-Artcraft-Level-Design-Part-3) (Nagrand)
+- (2018) [BfA Art Blast: Dungeon & Environment art](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-dungeon-environment-art/)
+- (2018) [BfA Art Blast: Prop Art & Level Design](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-level-design-props/)
+- (2018) [BfA Art Blast: Visual Development & Environments](https://magazine.artstation.com/2018/09/blizzard-entertainment-world-warcraft-art-blast-visual-development-environments/)
+- (2020) [Shadowlands Art Blast: Part One](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-one/)
+- (2020) [Shadowlands Art Blast: Part Two](https://magazine.artstation.com/2020/12/blizzard-entertainment-world-of-warcraft-shadowlands-art-blast-part-two/)
+- (2022) [Dragonflight Art Blast](https://magazine.artstation.com/2022/12/blizzard-entertainment-world-of-warcraft-dragonflight-art-blast/)
+- (2024) [War Within Artstation Art Blast](https://magazine.artstation.com/2024/09/blizzard-entertainment-world-of-warcraft-the-war-within/) 
 
 ### Maps
 - [Development map (map 451)](https://old.wow.tools/maps/development/116/2/-64.000/64.000)
@@ -164,4 +174,4 @@ retail map: https://map.wow.tools/?map=Nazjatar&v=732&z=6&lat=-12.973&lng=8.125
 - https://80.lv/articles/the-strings-of-environment-design/
 
 ## Credits
-I've credited all the artists where I could but credits obviously also go out to the various teams at Blizzard that work on/help with any of these processes.
+I've credited all the artists and linked sources where I could. Credits obviously also go out to the various teams at Blizzard that work on/help with any of these processes (shout-out tools team in particular!).
