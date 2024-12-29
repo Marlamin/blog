@@ -210,4 +210,6 @@ These panels go into the entire zone creation process and I highly recommend wat
 - https://80.lv/articles/the-strings-of-environment-design/
 
 ## Credits & closing
-I've credited all the artists and linked sources where I could. Credits obviously also go out to the various teams at Blizzard that work on/help with any of these processes (shout-out tools team in particular!). Hopefully this post showed off a few things you might not have seen before. There's so much I left out that you can see in the above resources or by going through e.g. [Hayven's excellent videos](https://www.youtube.com/@HayvenGames/videos). Thanks for reading.
+I've credited all the artists and linked sources where I could. Credits obviously also go out to the various teams at Blizzard that work on/help with any of these processes (shout-out tools team in particular!). Thanks to implave for proof-reading and contributing to this post as well. Hopefully this post showed off a few things you might not have seen before. There's so much I left out that you can see in the above resources or by going through e.g. [Hayven's excellent videos](https://www.youtube.com/@HayvenGames/videos). 
+
+Thanks for reading!
