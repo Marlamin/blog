@@ -4,7 +4,6 @@ title: WoW Modding 103 - Zone design
 authors: marlamin
 tags: [wow, world-of-warcraft, modding]
 enableComments: true
-unlisted: true
 image: https://marlam.in/u/AuIA4BD3RR.png
 ---
 
