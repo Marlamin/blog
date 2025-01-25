@@ -153,9 +153,13 @@ With that fixed and the vertices around the door frame updated, it looked pretty
 
 ![https://marlam.in/u/Wow_OGS1nzuNpI.png](https://marlam.in/u/Wow_OGS1nzuNpI.png)
 
-Now, you'd think that was it, but there's still a collision mesh there so you still can't _actually walk_ through the damn door. I can't blanket remove the collision mesh in that area since you'd just fall through the floor, so it is time to dive into yet another rabbit hole.
+Now, you'd think that was it, but there's still a collision mesh there so you still can't _actually walk_ through the damn door. I can't blanket remove the collision mesh in that area since you'd just fall through the floor, so it is time to find yet another specific vertice to change the coordinates of.
 
-WoW's WMOs use BSP (Binary Space Partioning) trees for detecting collision, a technique originally developed for Quake that is far too complex for me to explain so I'll link to [this video](https://youtu.be/wLHXn8IlAiA) instead. The first 2-3 minutes of the video should be enough to get a good idea of it, after that it probably gets far too technical for the purposes of just reading this blog post.
+WoW's WMOs use BSP (Binary Space Partioning) trees for detecting collision, a technique originally developed for Quake that is far too complex for me to explain so I'll link to [this video](https://youtu.be/wLHXn8IlAiA) for those who are curious, but you don't need to watch it to understand the rest of this paragraph. 
+
+Basically, some of the triangles/vertices in the WMO are exclusively for this collision mesh. Without diving into the entire BSP rabbit hole, I checked which triangles were used by the collision mesh and then which vertices were connected to it (thanks for the tip schlumpf). Then I found a specific vertice I could move to make an adequate hole.
+
+Although this was done through editing the file itself with my hacky tool, [here is a visual representation](https://marlam.in/u/blender_e3TUogcOmS.mp4) of what that did to the collision mesh. Not perfect, but good enough.
 
 _And this is where I am now, more updates soon(tm)._
 
