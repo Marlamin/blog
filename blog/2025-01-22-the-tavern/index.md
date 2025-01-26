@@ -42,7 +42,7 @@ In case you haven't seen it in its proper in-game glory before (and I won't be p
 
 Obviously, the existing interior model is the model we'll have to make a fitting exterior for. The model itself uses many assets and textures from the human building kit and introduced some textures that are still used in human buildings today so there's definitely precedent for making it a human-themed exterior as well. 
 
-The model has 3 separate groups:
+The model has 3 separate WMO groups:
 - "mainhall" (highlighted in orange below)
 - "library" (on the top left)
 - "fancyroom" (on the right)
@@ -161,13 +161,41 @@ Basically, some of the triangles/vertices in the WMO are exclusively for this co
 
 Although this was done through editing the file itself with my hacky tool, [here is a visual representation](https://marlam.in/u/blender_e3TUogcOmS.mp4) of what that did to the collision mesh. Not perfect, but good enough.
 
+### Merging the WMOs
+An important part that I need to do is merge the exterior group I made with the interior groups into one single WMO. 
+
+My first attempt at adding the group involved updating the original Tavern root WMO to reference the new group file I added as well as add the group to all the other bits that reference groups.
+It was largely successful, the obvious thing being that the materials are wrong.
+
+![https://marlam.in/u/Wow_OyoGokl0cY.jpg](https://marlam.in/u/Wow_OyoGokl0cY.jpg)
+
+The reason why the materials are wrong is that materials are stored inside the root WMO and the group WMO refers to these by number. The materials from the new group WMO I made obviously don't match the ones in the original tavern's root WMO that I added the new group to, so it has the wrong materials.
+
+After adding a feature to my tool where it reads the original materials, the new materials, merges them and updates the new group, it looked much better!
+
+![https://marlam.in/u/Wow_bunvWxOnYi.jpg](https://marlam.in/u/Wow_bunvWxOnYi.jpg)
+
+With that out of the way, it's time to figure out how portals work. The easiest way to explain portals is that they are 'windows' between the WMO groups used for doors or other sorts of entrance. They are used for hiding specific groups if they're not in view amongst other things.  
+
+Both the root WMO file and the group WMO file both reference these portals, so I had to patch all of them. It took me a long time to figure out what exactly the right order of portals was, but with the help of a broken WotLK-converted version that did have working portals, I was able to map out the various changes I needed to do.
+
+![https://marlam.in/u/FdYNLJDYa7.png](https://marlam.in/u/FdYNLJDYa7.png)
+_The version I'm working on ("8xp_hearthstonetavern") is on the left, the WotLK version ("int") is on the right. Changes I needed to make to my version are after the arrows. G(x) = group index, PS = portal start, PC = portal count, P(x) = portal info index, PR(x) = portal reference index. -1 or 1 is the portal's side._
+
+With that implemented into the patching tool, we can now look inside from the outside...
+
+![https://marlam.in/u/Wow_jWvO7f13f3.png](https://marlam.in/u/Wow_jWvO7f13f3.png)
+
+... and vice versa!
+
+![https://marlam.in/u/Wow_Keua7dfRl8.png](https://marlam.in/u/Wow_Keua7dfRl8.png)
+
+I will definitely need to do a bunch of tweaking later on to fix up any weird geometry that's sticking in/out, but I'm going to call this step complete.
+
 _And this is where I am now, more updates soon(tm)._
 
 ### Finish basic exterior
 With that done, it's time to move on to the rest of the exterior to get a 'closed' model around the interior. That includes a roof.
-
-### Merging the WMOs
-An important part that I need to do is merge the exterior group with the interior groups into one WMO. This will involve making portals (probably explain this) as well as modifying the WMOs in other ways I have not yet thought of or ran into.
 
 ### Detailing
 Fixing up the various UV issues, adding some exterior doodads and all that.
