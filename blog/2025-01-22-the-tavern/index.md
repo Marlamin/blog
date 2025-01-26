@@ -192,10 +192,42 @@ With that implemented into the patching tool, we can now look inside from the ou
 
 I will definitely need to do a bunch of tweaking later on to fix up any weird geometry that's sticking in/out, but I'm going to call this step complete.
 
-_And this is where I am now, more updates soon(tm)._
-
 ### Finish basic exterior
-With that done, it's time to move on to the rest of the exterior to get a 'closed' model around the interior. That includes a roof.
+With that done, it's time to move on to the rest of the exterior to get a 'closed' model around the interior. That includes a roof. The concept art has a high pointy roof, something I don't have the modeling ability for. With some input from friends, the only real choice was to go for the Frontier Inn roof but heavily modified.
+
+A few resized and combined roofs already looked somewhat acceptable. 
+
+![https://marlam.in/u/blender_IYzoc2ZO1z.jpg](https://marlam.in/u/blender_IYzoc2ZO1z.jpg)
+
+With some basic recoloring done it looked pretty fitting. 
+
+![https://marlam.in/u/blender_GTi9amsMMs.jpg](https://marlam.in/u/blender_GTi9amsMMs.jpg) 
+
+I had to change the texture for the roof trims -- this will however change back in the next few screenshots as it reverted to the in-game texture.
+
+Over time, I was able to build out the exterior. Here's the first version of the front of the tavern with the rough geometry/texturing done. It looks pretty bland and requires far more detailing work.
+
+![https://marlam.in/u/blender_wGK3gNP7jv.jpg](https://marlam.in/u/blender_wGK3gNP7jv.jpg)
+
+There's two areas of note that require some imagination for the exterior layout. 
+
+The interior has a hallway leading to the library group, but that same hallway also splits off to a staircase going to a closed door. Naturally, there is nothing behind that door, but we still have to build the exterior like there is, so I started blocking out some basic exterior around said imaginary room.
+
+![https://marlam.in/u/blender_DOcZBFsq9e.jpg](https://marlam.in/u/blender_DOcZBFsq9e.jpg)
+
+Another area of note is the library room. It being based on the human garrison mage tower means it has an arguably perfect exterior made for it already, but after some messing around it became apparent that I wasn't able to fit that in well with the rest of the exterior, even with a bunch of retexturing. Shame.
+
+![https://marlam.in/u/blender_vN4Pvarl9E.png](https://marlam.in/u/blender_vN4Pvarl9E.png)
+
+...so another square building extension it is. At least for now. The interior windows don't match up at all and that's a bit annoying, so I might come back to this later.
+
+![https://marlam.in/u/blender_G0t0k2yZfB.jpg](https://marlam.in/u/blender_G0t0k2yZfB.jpg)
+
+With that blocked out, here is the basic layout that I'm going for. Ignore the roof trims.
+
+![https://marlam.in/u/blender_QfHTHTzJ2Q.png](https://marlam.in/u/blender_QfHTHTzJ2Q.png)
+
+_And this is where I am now, more updates soon(tm)._
 
 ### Detailing
 Fixing up the various UV issues, adding some exterior doodads and all that.
