@@ -241,9 +241,24 @@ In Blender:
 In-game: <ReactPlayer controls url='https://marlam.in/u/Wow_W9gr1fAa9O.mp4'/>
 
 I'm sure I'll be fixing/improving stuff as I encounter it (there's several issues already in the above videos), but I'd say the basic exterior, except for details like windows and whatever I come up with, is done now.
+### Fixing things
+Outside of many many random things like UV issues, gaps and other things I fixed (and will keep fixing) I won't bore you with, some were notable.
+
+One of the things is that the interior group has some lights outside that I need to disable as they show up only when the interior is loaded. One of said lights can be seen blipping in and out of existence:
+
+<ReactPlayer controls url='https://marlam.in/u/Wow_M8NEBbJ8nW.mp4' /><br />
+
+The tavern has 178 lights and I had to figure out which lights these were. After some work, I disabled light 45, 46 and 48 through my tool, which fixes the above issue. 
+
+Another thing is that the interior model has some geometry sticking out that I need to patch out similarly to how I patched out the door. The interior has more geometry sticking out in other places, but these places don't show up as the interior is _only_ loaded when the interior is shown through the door portal. 
+
+![https://marlam.in/u/Wow_8sRhxAuMmD.png](https://marlam.in/u/Wow_8sRhxAuMmD.png)
+
+- UV issues
+- More vertices near the door
+- Door transition
 
 ### Detailing
-Fixing up the various UV issues, adding some exterior doodads and all that.
 - More windows where there should be windows
 - Doors where there should be doors
 - Doodads: supplies, fences, stables, maybe some outdoor Hearthstone tables 
