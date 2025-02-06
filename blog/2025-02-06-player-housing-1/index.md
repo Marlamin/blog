@@ -5,10 +5,9 @@ authors: marlamin
 tags: [wow, world-of-warcraft]
 enableComments: true
 image: https://marlam.in/u/Discord_i03KeSMlAV.png
-unlisted: true
 ---
 
-Huzzah! Blizzard released their [first blog post talking about Player Housing](https://news.blizzard.com/en-us/article/24176592/building-in-azeroth-a-first-look-at-housing)! They explained the design pillars of player housing that they're keeping in mind while designing the system, as well as some other bits. I have a lot of thoughts, so I wanted to write up this blog post instead of making 40 posts on BlueSky. I was already going to make a player housing speculation blog post at some point, so I just collapsed that idea into this one and put all the fun future speculation bits at the end.
+Huzzah! Blizzard released their [first blog post talking about Player Housing](https://news.blizzard.com/en-us/article/24176592/building-in-azeroth-a-first-look-at-housing)! They explained the design pillars of player housing that they're keeping in mind while designing the system, as well as some other bits. I have a lot of thoughts, so I wanted to write up this blog post instead of making 40 posts on BlueSky. I was already going to make a player housing speculation blog post at some point, so I just collapsed that idea into this one and put all the fun future speculation bits at the end/in future posts.
 
 <!-- truncate -->
 
@@ -155,3 +154,6 @@ These are kits that have been either recently updated or could simply be pretty 
 - Arathor: New kit in 11.0.
 - Tuskarr: Kits updated in DF with maybe more coming in TLT. 
 - Kul Tiras: Large kit added in BfA, still holds up.
+
+## More soon
+I didn't intend on ending the post here, but this is where my internet gave out for the night. Posted this draft from mobile and will likely do another post when I have enough other stuff to talk about and speculate on, which is very likely to be very soon. If you have any suggestions, let me know in the comments or on BlueSky: https://bsky.app/profile/marlam.in 
