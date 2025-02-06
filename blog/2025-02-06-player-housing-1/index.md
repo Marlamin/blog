@@ -154,6 +154,7 @@ These are kits that have been either recently updated or could simply be pretty 
 - Arathor: New kit in 11.0.
 - Tuskarr: Kits updated in DF with maybe more coming in TLT. 
 - Kul Tiras: Large kit added in BfA, still holds up.
-
+- Nightborne: Added in Legion, but can still hold up.
+  
 ## More soon
 I didn't intend on ending the post here, but this is where my internet gave out for the night. Posted this draft from mobile and will likely do another post when I have enough other stuff to talk about and speculate on, which is very likely to be very soon. If you have any suggestions, let me know in the comments or on BlueSky: https://bsky.app/profile/marlam.in 
