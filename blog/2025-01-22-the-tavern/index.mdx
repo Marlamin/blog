@@ -4,13 +4,13 @@ title: The Hearthstone Tavern project
 authors: marlamin
 tags: [wow, world-of-warcraft, modding]
 enableComments: true
-image: https://marlam.in/u/Wow_GKYAOfu39U.jpg
-unlisted: true
-date: 2025-01-23
+image: https://marlam.in/u/Wow_saiE96M5R4.jpg
+date: 2025-02-23
 ---
 import ReactPlayer from 'react-player'
 
 # The Hearthstone Tavern
+## Intro
 I've been over this on both this blog and on Twitter many times before. I'm a big fan of the Hearthstone Tavern model that Blizzard added back in 8.2.5. I even made [thread in the community council](https://us.forums.blizzard.com/en/wow/t/dont-let-the-unused-hearthstone-tavern-model-go-to-waste/1396364) about it. The model is great. It has an amazing atmosphere and is what I believe genuinely a work of art. However, it was never used. 
 
 *More info on how the Tavern was supposed to be used in WoW can be found in an earlier blog post [here](/wow-wishlist#hearthstone-tavern).*
@@ -19,7 +19,7 @@ I've been wanting to use it in some projects over the years, but I always run in
 
 <!-- truncate -->
 
-***Warning:*** I am a notorious reinvent-the-wheel type of person who likes doing things my own way. There will be a lot of that in this post.
+***Warning:*** I am a notorious reinvent-the-wheel type of person who likes doing things my own way. There will be a lot of that in this post, which is my longest blog post yet.
 
 ## What we're working with
 ### Concept art
@@ -67,6 +67,8 @@ The only usable thing that really came out of it was the resized/slightly rework
 The modding community made a great add-on for Blender called [WoW Blender Studio](https://gitlab.com/skarnproject/blender-wow-studio/) that allows you to import/export WMOs _(Bigger models)_ and M2s _(Smaller models)_ in to and out of Blender. 
 
 There's only 2 things that are important to make note of, the way it was integrated with Blender requires Blender 3.4 to be used and, like most community made modding tools, it only really works with WotLK versions of WoW file formats. Not great since I'm targeting modern WoW, but not the end of the world.
+
+To get models from their WotLK format that is output by WBS to a more modern format I'm using a tool called SLFiledataConverter as well as some tooling I made specifically for this project. More on the latter, well, later. 
 
 ### Proof of concept
 To test the tooling pipeline (Blender -> WBS -> Upconvert WMO to Legion -> Patch into the game) I wanted to try getting the entrance I made earlier into the game. WBS took some figuring out, but I got there in the end!
@@ -253,25 +255,62 @@ The tavern has 178 lights and I had to figure out which lights these were. After
 Another thing is that the interior model has some geometry sticking out that I need to patch out similarly to how I patched out the door. The interior has more geometry sticking out in other places, but these places don't show up as the interior is _only_ loaded when the interior is shown through the door portal. 
 
 ![https://marlam.in/u/Wow_8sRhxAuMmD.png](https://marlam.in/u/Wow_8sRhxAuMmD.png)
+With those vertices patched in my tool, those are now gone!
 
-_This is where I currently am in the project. The rest of the post is effectively a todo list/placeholder. Check back in the future!_
+Some of the windows that were copied from the inside model also need recoloring as they should be yellow looking outside-in.
 
-- UV issues
-- More vertices near the door
-- Door transition
+![https://marlam.in/u/Wow_2ZoxjPqTXz.png](https://marlam.in/u/Wow_2ZoxjPqTXz.png)
 
-### Detailing
-- More windows where there should be windows
-- Doors where there should be doors
-- Doodads: supplies, fences, stables, maybe some outdoor Hearthstone tables 
+This is as good of a job as I could do without actually texturing something myself.
 
-### Showcase 
-Just a neat showcase to end the post with. Place in the world? Scenescript? Maybe mess with some of the future ideas for funsies. 
+One final thing I wanted to make is a version of the model with the front door closed.
 
-## Future ideas
-- Interior updates (Warcraft Rumble machine, some of the things from the cinematics)
-- NPCs? Custom ones? Hmm!
-- ???
+![https://marlam.in/u/blender_aaVZHVlL9a.png](https://marlam.in/u/blender_aaVZHVlL9a.png)
 
-## Credits
+Yeah, there's no door knob, I know. I've hidden the door mesh [in the stairs](https://marlam.in/u/blender_PP10HrdCVa.png) until I need it in the future at which point I'll add a door knob doodad.
+
+## In closing
+### Done for now
+There are a bunch of issues I want to fix with the WMO and just like my programming projects there's always some of that that can be done, but it's in well enough shape now for me to get going on the various things I want to do with it.
+
+Some issues that I will likely be fixing over the next few months (some of which I'll need expert help with):
+- [This atrocious door transition](https://marlam.in/u/Wow_q0QeXgBzhp.png), will need a bunch of modeling work as well as figuring out how real WMO lighting transitions work in WoW.
+- [Ugly UVs](https://marlam.in/u/Wow_KXL5dkTipJ.png), frankly can not be bothered as this is tedious work I am not good enough yet.
+- Collision problems in some places, this is a hard problem that isn't a big issue right now as it's largely the exterior walls above ground level that have this issue.
+
+Things I want to maybe look into adding:
+- Interior updates (Warcraft Rumble machine, some of the things from the earlier mentioned cinematics)
+- Some NPCs based on the cinematics/Hearthstone.
+- More doodads. MORE!
+
+I did a Twitch stream ([VOD available here](https://www.twitch.tv/videos/2376621550) or [here](https://www.youtube.com/watch?v=6CYv-bZL2OU) if the Twitch one expires) that goes into the process of working on the model and adds some world around the tavern (and a balcony above the entrance) that I'm pretty happy with, just as an impression.
+Granted this is all very dodgy lore wise given the tavern's mysterious/ephemeral place, but it still adds some flavor that teases the imagination.
+
+### Screenshots 
+![https://marlam.in/u/Wow_bkPZKl8Psb.jpg](https://marlam.in/u/Wow_bkPZKl8Psb.jpg)
+_The stable area with a random door in the back._  
+
+![https://marlam.in/u/Wow_rsvX8gC5lm.jpg](https://marlam.in/u/Wow_rsvX8gC5lm.jpg)
+_Ignore the broken mountain in the distance, it is my test map after all._  
+
+![https://marlam.in/u/Wow_saiE96M5R4.jpg](https://marlam.in/u/Wow_saiE96M5R4.jpg)
+_It started snowing!_
+
+![https://marlam.in/u/Wow_fLb5VgXSOe.jpg](https://marlam.in/u/Wow_fLb5VgXSOe.jpg)
+_The loading dock/break area that the door behind the bar leads to._
+
+![https://marlam.in/u/Wow_Iy2rpvOR3T.jpg](https://marlam.in/u/Wow_Iy2rpvOR3T.jpg)
+_The back is still fully modeled, albeit a bit boring. Maybe I'll add some stuff here in the future!_
+
+### Video
+Quick fly-around video of the exterior. Video bitrate isn't great, but you can get a pretty good idea of it. 
+<iframe src="//www.youtube.com/embed/cdrqTGs3Fjs" frameborder="0" allowfullscreen="allowfullscreen" width="100%" height="500"></iframe>
+
+### Credits
 Many thanks to my friends who have helped me out throughout this project (specifically Implave and Belvane!). Obviously credits go out to the Blizzard artists that worked on the original tavern model in any shape or form. Same goes for the Frontier Inn that I largely harvested parts from.
+
+----
+
+That's all folks! I'm sure the tavern will make an appearance in a future project blog post. No clue how long that project is going to take, but I'm sure I'll learn just as much on that one as I did making this exterior. 
+
+Thanks for reading!
