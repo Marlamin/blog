@@ -4,7 +4,7 @@ title: My wishlist for WoW
 authors: marlamin
 tags: [wow, world-of-warcraft]
 enableComments: true
-image: https://old.wow.tools/pub/wow-wishlist-blog.png
+image: https://marlam.in/u/wow-wishlist-blog.png
 ---
 What if you could change anything about WoW and you didn't have to care about all the things Blizzard has to care about like dev resources, player reception, future content, backwards compatibility and all that. Just complete freedom with no consequences whatsoever. 
 
