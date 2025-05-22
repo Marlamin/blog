@@ -66,14 +66,14 @@ More examples:
 ### 2D map printing
 In recent years, we've noticed that Blizzard sometimes appears to start out by just 'printing' the 2D layout maps onto terrain, and then sculpting it from there on out. The most recent example is the dev map I puzzled together from unreferenced files left inside WoW's online installation archives. 
 
-<a href='https://old.wow.tools/pub/mapv1.png' target='_BLANK'><img src='https://marlam.in/u/BoiuOGQMTj.png'></img></a>
+<a href='https://marlam.in/u/mapv1.png' target='_BLANK'><img src='https://marlam.in/u/BoiuOGQMTj.png'></img></a>
 _Click for full-resolution image (~90MB, 16285x11942 resolution)._ 
 
 Note that the same map legend that and sea/ADT grid from Josh Navarro's Arathor Canyons AKA Hallowfall concept map from the previous paragraph largely remained intact, with the zone then built on top of it. Also note the 'approved chunk sizes' on the top right for how many ADTs/tiles/chunks a zone was approved to take up. 
 
 There's also that unknown Rootlands zone on there, which might or might not (have been?) the zone for the Haranir race. _(I didn't put those two together until after publishing the map, my bad, Blizz.)_
 
-<a href='https://old.wow.tools/pub/dragonislesdevmap.jpg' target='_BLANK'><img src='https://marlam.in/u/AuIA4BD3RR.png'></img></a>
+<a href='https://marlam.in/u/dragonislesdevmap.jpg' target='_BLANK'><img src='https://marlam.in/u/AuIA4BD3RR.png'></img></a>
 _Click for full-resolution image (~1MB, 5574x2508 resolution)._  
 
 Another instance of a 'printed map' we got is visible (albeit a bit rougher looking) is an early Dragon Isles map pasted on top of the map they used to develop Zaralek Caverns on.
@@ -119,7 +119,7 @@ Exterior designers usually make spots on maps or related maps that have the kit 
 
 Some uses like making it easy to copy/paste assets from the kit into the map seem obvious, but it's possibly also during asset development to keep an eye on what is finished/not or what needs cutting if it ended up being unused (as can be seen in the examples below).
 
-<a href='https://old.wow.tools/pub/2566_rs.jpg' target='_BLANK'><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/chrome_UNDdC2Abwh.png'></img><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/GKG9nhMKR1.png'></img></a>
+<a href='https://marlam.in/u/2566_rs.jpg' target='_BLANK'><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/chrome_UNDdC2Abwh.png'></img><img style={{width: '50%', float: 'left'}} src='https://marlam.in/u/GKG9nhMKR1.png'></img></a>
 _10.2 asset kits (with an image printed on the map naming it). Click for *VERY* high-res image of full map._
 
 <a href='https://map.wow.tools/?map=2222&v=857&z=7&lat=-21.265&lng=7.297' target='_BLANK'><img src='https://marlam.in/u/6rCZZqxGoq.png'></img></a>
