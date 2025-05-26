@@ -105,6 +105,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 #### 2020 - 9.x - Shadowlands
 - Start switching over graphic pipelines to use Prism, Blizzard's cross-game graphics layer, starting with DirectX 11.
 - Introduced new character customization system bringing several rendering changes to character models/texturing.
+- Added experimental controller support.
 - Added raytracing as well as extended point/spot lights to support this.
 - Added skyscene system to allow for various objects in the skybox that change based on various conditions.
 - Minor M2 additions adding various chunks for additional information for shaders.
