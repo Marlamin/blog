@@ -111,7 +111,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Minor ADT additions to allow for color grading terrain tileset textures.
 
 #### 2022 - 10.x - Dragonflight
-- Added hot-reloading of the TACT filesystem allowing for the client to switch data builds without a restart.
+- Added hot-reloading of the TACT filesystem allowing for the client to switch data builds without a restart (unused for now).
 - Updated filesystem to add TVFS (TACT Virtual File System) manifests. Required but older system is still in place for now.
 
 #### 2024 - 11.x - The War Within
