@@ -63,6 +63,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 
 #### 2010 - 4.x - Cataclysm
 - Added experimental DirectX 11 support.
+- Added new water.
 - Overhaul of the shader system, adds support for shader compression and adds several new shaders.
 - Major ADT upgrades to support the extended view distance as well as various new terrain features.
 - Switched over to a streaming system for MPQs allowing for quicker installations and patching.
@@ -70,6 +71,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Introduce ADB files to allow hotfixing DB2s.
 
 #### 2012 - 5.x - Mists of Pandaria
+- Added [SSAO](https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion)
 - Introduce the physics system to allow for e.g. belt armor models to have swinging ropes.
 - Major ADT upgrades to support height texturing, texture scaling and blending between WMOs and terrain.
 - More improvements to the streaming MPQ system.
@@ -106,7 +108,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Start switching over graphic pipelines to use Prism, Blizzard's cross-game graphics layer, starting with DirectX 11.
 - Introduced new character customization system bringing several rendering changes to character models/texturing.
 - Added experimental controller support.
-- Added raytracing as well as extended point/spot lights to support this.
+- Added raytracing as well as extended point/spot lights to support raytraced shadows.
 - Added skyscene system to allow for various objects in the skybox that change based on various conditions.
 - Minor M2 additions adding various chunks for additional information for shaders.
 - Minor ADT additions to allow for color grading terrain tileset textures.
