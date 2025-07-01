@@ -5,6 +5,7 @@ authors: marlamin
 tags: [wow, world-of-warcraft, datamining]
 enableComments: true
 unlisted: true
+image: https://marlam.in/u/chrome_BJxSKEVgT6.png
 ---
 
 Much to my annoyance, at an increasingly frequent rate, the "WoW needs a new engine! It's still based on Warcraft 3!" discussions show up again. First, I don't think that's actually what people want when they say that. Second, there's very little if anything from the Warcraft 3 days left. 
