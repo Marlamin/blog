@@ -62,12 +62,14 @@ Most of the changes to the WoW engine obviously came after its initial release i
 
 #### 2008 - 3.x - Wrath of the Lich King
 - Added DirectX 10 support.
+- Phasing system.
 - Major ADT changes to add vertex shading, a new liquid storage format and cubemap support (e.g. Crystalsong Forest reflections).
 - Major M2 changes that split the files up into several different files allowing for quicker/more selective loading.
 
 #### 2010 - 4.x - Cataclysm
 - Added experimental DirectX 11 support.
 - Added new water.
+- Terrain phasing allowing for ADTs to be swapped to other ADTs without requiring a full map reload.
 - Overhaul of the shader system, adds support for shader compression and adds several new shaders.
 - Major ADT upgrades to support the extended view distance as well as various new terrain features.
 - Switched over to a streaming system for MPQs allowing for quicker installations and patching.
@@ -75,15 +77,20 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Introduce ADB files to allow hotfixing DB2s.
 
 #### 2012 - 5.x - Mists of Pandaria
-- Added [SSAO](https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion)
+- Added [SSAO](https://en.wikipedia.org/wiki/Screen_space_ambient_occlusion).
 - Introduce the physics system to allow for e.g. belt armor models to have swinging ropes.
 - Major ADT upgrades to support height texturing, texture scaling and blending between WMOs and terrain.
 - More improvements to the streaming MPQ system.
 
 #### 2014 - 6.x - Warlords of Draenor
 - Switch filesystems from [MPQ](https://wowdev.wiki/MPQ) to [CASC](https://wowdev.wiki/CASC).
+- Added cosmetic parent map system allowing for map phases to load ADTs from parent maps where they don't have any ADTs of their own.
 - Minor M2 changes that add separate files for bone data.
 - Minor improvements to the LOD system.
+- Removes MSAA (Multisample Anti-Aliasing) and introduces [CMAA](https://www.intel.com/content/www/us/en/developer/articles/technical/conservative-morphological-anti-aliasing-cmaa-update.html). 
+- (6.1) Lighting system overhaul to per-pixel point lights. ([Blue post](https://www.bluetracker.gg/wow/topic/us-en/17944910-engineers-workshop-anti-aliasing-lighting/))
+- (6.1) Brings back MSAA and introduces SSAA (Supersample anti-aliasing) option. ([Blue post](https://www.bluetracker.gg/wow/topic/us-en/17944910-engineers-workshop-anti-aliasing-lighting/))
+- (6.1) New SSAO (Screen Space Ambient Occlusion) method: [HBAO+](https://developer.nvidia.com/rendering-technologies/horizon-based-ambient-occlusion-plus).
 
 #### 2016 - 7.x - Legion
 - Added (optionally animated) points lights and spot lights.
@@ -113,18 +120,25 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Start switching over graphic pipelines to use Prism, Blizzard's cross-game graphics layer, starting with DirectX 11.
 - Introduced new character customization system bringing several rendering changes to character models/texturing.
 - Added experimental controller support.
-- Added raytracing as well as extended point/spot lights to support raytraced shadows.
+- Added raytracing as well as extended point/spot lights to support raytraced shadows. ([Blue post](https://www.bluetracker.gg/wow/topic/us-en/23494819-engineers-workshop-enabling-ray-traced-shadows-in-shadowlands/))
+- Added FidelityFX CACAO (Combined Adaptive Compute Ambient Occlusion) support. ([Blue post](https://us.forums.blizzard.com/en/wow/t/improved-graphical-fidelity-in-wow/723597))
+- Added support for VRS (Variable Rate Shading).
 - Added skyscene system to allow for various objects in the skybox that change based on various conditions.
 - Minor M2 additions adding various chunks for additional information for shaders.
 - Minor ADT additions to allow for color grading terrain tileset textures.
 
 #### 2022 - 10.x - Dragonflight
 - Added hot-reloading of the CASC filesystem allowing for the client to switch data builds without a restart (unused for now).
+- Further improved Variable Rate Shading by implementing Intel's VALAR algorithm.
+- Added support for NVIDIA Reflex low-latency mode. ([Blog post](https://www.nvidia.com/en-us/geforce/news/february-2023-reflex-game-hardware-updates/))
 - Updated filesystem to add TVFS (TACT Virtual File System) manifests. Required but older system is still in place for now.
+- (10.1) Added initial version of airlock system that allows for seamless map transitions while moving through geometry that is on both maps (the 'airlock').
 
 #### 2024 - 11.x - The War Within
 - Extended volumetric fog system.
+- Further improved Variable Rate Shading with a new version of Intel's VALAR algorithm. ([More info](https://www.intel.com/content/www/us/en/developer/articles/technical/velocity-luminance-adaptive-rasterization.html)).
 - First M3 models added (more below!).
+- Further improved the airlock system by allowing for position offsets between seamless teleports (used in some delves and to go from above ground to underground).
 - (11.0.5) Started switching over to an entity component system in networking. ([Wiki](https://en.wikipedia.org/wiki/Entity_component_system) - [Blue post](https://us.forums.blizzard.com/en/wow/t/nerub-ar-raid-lag-fixes-underway-october-25/1993481/8))
 - (11.1.7) Minor M2 changes for player housing.
 - (11.2.0) First M3 model used in-game.
@@ -206,3 +220,6 @@ To sum it up, I believe that all this together points towards (and I've been thi
 
 ## In closing
 While WoW is an old and large beast, Blizzard isn't very shy of modernizing things under the hood, even if it causes a few issues from time to time. It's very possible I'll have to eat (some of) my words in the future when a WoW 2.0 comes out after the World Soul Saga with a million billion reworked fancy looking M3 assets and/or entirely new client based on cool new tech, but after some initial chagrin of having to deal with that from a datamining PoV, I'm sure I'd love for that to be the case. The future of WoW isn't dead just yet, regardless of how many content creators want you to believe that.
+
+## Updates
+01-07-2025: Added notes on CMAA, HBAO+, VRS, CACAO, NVIDIA Reflex, phasing and deferred per-pixel lighting.
