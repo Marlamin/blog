@@ -4,7 +4,6 @@ title: On the "new WoW engine" topic
 authors: marlamin
 tags: [wow, world-of-warcraft, datamining]
 enableComments: true
-unlisted: true
 image: https://marlam.in/u/chrome_BJxSKEVgT6.png
 date: 2025-07-01
 ---
@@ -38,7 +37,7 @@ It used different or upgraded file formats. For model files for example, it swit
 As for internals, I can't say I had experience with looking at e.g. the rendering system or the network system at the time, but common sense dictates that given WoW looked wildly different and was built as an MMO instead of an RTS, these systems weren't exactly the same outside of the similar graphics API or data transfer protocols they targeted at the time.
 
 ### A timeline of changes
-Most of the changes to the WoW engine obviously came after its initial release in 2004. The earlier on the less detailed information the community has on internal changes, but I'll do my best to add any and all I find. For sanity reasons I'm ignoring all the changes Blizzard did before the original Retail release in the 0.x alpha/betas. If no version is specified a change came with the pre-patch/expansion itself.
+Most of the changes to the WoW engine obviously came after its initial release in 2004. The earlier on the less detailed information the community has on internal changes, but I'll do my best to add any and all I find. For sanity reasons I'm ignoring all the changes Blizzard did before the original Retail release in the 0.x alpha/betas as well as any interface/API-related changes, you can check the [Warcraft Wiki](https://warcraft.wiki.gg/wiki/API_change_summaries) for the latter. If no version is specified a change came with the pre-patch/expansion itself. 
 
 #### Glossary
 - **M2**: File format for character, creature, doodad, spell and other animated/smaller models. ([Wiki](https://wowdev.wiki/M2))
@@ -57,7 +56,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - (1.10.0) Weather system introduced.
 
 #### 2007 - 2.x - Burning Crusade
-- Upgraded the Lua version from 5.0 to 5.1.1 which WoW still uses today, albeit optimized, extended and hardened throughout the years.
+- Upgraded the Lua version from 5.0 to 5.1 which WoW still uses today, albeit optimized/updated throughout the years.
 - DXT5 texture compression support added to BLPs.
 - Minor ADT changes to add support for flying bounds.
 
