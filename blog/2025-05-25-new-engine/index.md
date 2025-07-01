@@ -6,6 +6,7 @@ tags: [wow, world-of-warcraft, datamining]
 enableComments: true
 unlisted: true
 image: https://marlam.in/u/chrome_BJxSKEVgT6.png
+date: 2025-07-01
 ---
 
 Much to my annoyance, at an increasingly frequent rate, the "WoW needs a new engine! It's still based on Warcraft 3!" discussions show up again. First, I don't think that's actually what people want when they say that. Second, there's very little if anything from the Warcraft 3 days left. 
@@ -26,13 +27,13 @@ This is probably good to set out as baseline when working on this post. I'm sure
 From what I've gathered, most people just want the game to get a complete visual overhaul to look closer to what those "WoW 2.0" AI slop videos are putting out. Given the amount of work remaking all assets ever, I'm not going to tackle that. That is, unless Blizzard has been doing that behind the scenes for some reason for several years now, not going to happen anytime soon. There is however a chance this will be the case for certain future assets. More on that later!
 
 ### Complete overhaul
-Others want a complete engine overhaul to the likes of a modern AAA engine such as Unreal engine, either for performance reasons or visual ones. While there's projects out there attempting this, they'll have the same issue in needing to make new assets to make it not look like they just stuck old assets into a modern engine. And if such a look is fine for said people, those projects are also always focusing on older and simpler versions of the game such as 1.12 or 3.3.5 with far less systems to deal with. For modern WoW and all the historic content that comes with it, this quickly becomes an unsurmountable task, let alone while running a live service game.
+Others want a complete engine overhaul to the likes of a modern AAA engine such as Unreal engine, either for performance reasons or visual ones. While there's projects out there attempting this, they'll have the same issue in needing to make new assets to make it not look like they just stuck old assets into a modern engine. And if such a look is fine for said people, those projects are also always focusing on older and simpler versions of the game such as 1.12 or 3.3.5 with far less systems to deal with. For modern WoW and all the historic content that comes with it, this quickly becomes an insurmountable task, let alone while running a live service game.
 
 ## The current engine
 ### Warcraft 3 == WoW?
 So most of the engine at release was still the same as Warcraft 3, right? Not really. I'm sure parts were, but most of it wasn't the same at that point. 
 
-It used different or upgraded file formats. For model files for example, it switched over from [MDX](https://wowdev.wiki/MDX) to [M2](https://wowdev.wiki/M2) during the original Alpha and these are hardly comparable file formats. Outside of the [BLP](https://wowdev.wiki/BLP) file extension, of which its internal format version was bumped from 0 (or from 1 as seen in Warcraft 3: The Frozen Throne) to 2 with various changes coming with that, no file formats or extensions were carried over from Warcraft 3 directly.
+It used different or upgraded file formats. For model files for example, it switched over from [MDX](https://wowdev.wiki/MDX) to [M2](https://wowdev.wiki/M2) during the original Alpha and these are hardly comparable file formats. Outside of the [BLP](https://wowdev.wiki/BLP) file extension, of which its internal format version was bumped from 0 (or from 1 as seen in Warcraft 3: The Frozen Throne) to 2 with various changes coming with that, no file formats or extensions were carried over from Warcraft 3 directly. It is worth noting that BLP is also just a wrapper over various image/texture compression formats and while these things don't change a lot, they could add newer compression methods like BC7 in the future pretty easily just like they added DXT5/BC5 to it post-release as well.
 
 As for internals, I can't say I had experience with looking at e.g. the rendering system or the network system at the time, but common sense dictates that given WoW looked wildly different and was built as an MMO instead of an RTS, these systems weren't exactly the same outside of the similar graphics API or data transfer protocols they targeted at the time.
 
@@ -40,7 +41,7 @@ As for internals, I can't say I had experience with looking at e.g. the renderin
 Most of the changes to the WoW engine obviously came after its initial release in 2004. The earlier on the less detailed information the community has on internal changes, but I'll do my best to add any and all I find. For sanity reasons I'm ignoring all the changes Blizzard did before the original Retail release in the 0.x alpha/betas. If no version is specified a change came with the pre-patch/expansion itself.
 
 #### Glossary
-- **M2**: File format for character, creature, doodad and other animated/smaller models. ([Wiki](https://wowdev.wiki/M2))
+- **M2**: File format for character, creature, doodad, spell and other animated/smaller models. ([Wiki](https://wowdev.wiki/M2))
 - **WMO**: File format for larger static models such as buildings. ([Wiki](https://wowdev.wiki/WMO))
 - **ADT**: File format for terrain. ([Wiki](https://wowdev.wiki/ADT))
 - **DBC/DB2**: File format for data table storage. (Wiki: [DBC](https://wowdev.wiki/DBC) - [DB2](https://wowdev.wiki/DB2))
@@ -52,17 +53,18 @@ Most of the changes to the WoW engine obviously came after its initial release i
 > **Note that the below list of changes is not exhaustive by any means, but just the stuff I was able to find on various sources/from my own knowledge.**
 
 #### 2004+ - 1.x - Post-release
-- (1.8.3) Introduced the Blizzard Launcher. Not neccesarily an 'engine' upgrade, but big QoL change.
+- (1.8.3) Introduced the Blizzard Launcher. Not necessarily an 'engine' upgrade, but big QoL change.
 - (1.10.0) Weather system introduced.
 
 #### 2007 - 2.x - Burning Crusade
 - Upgraded the Lua version from 5.0 to 5.1.1 which WoW still uses today, albeit optimized, extended and hardened throughout the years.
+- DXT5 texture compression support added to BLPs.
 - Minor ADT changes to add support for flying bounds.
 
 #### 2008 - 3.x - Wrath of the Lich King
 - Added DirectX 10 support.
 - Major ADT changes to add vertex shading, a new liquid storage format and cubemap support (e.g. Crystalsong Forest reflections).
-- Major M2 changes that split the files up into several different files allowing for quicker/more selective loading as well as 
+- Major M2 changes that split the files up into several different files allowing for quicker/more selective loading.
 
 #### 2010 - 4.x - Cataclysm
 - Added experimental DirectX 11 support.
@@ -90,7 +92,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Major ADT upgrades to support WMO scaling.
 - Major M2 changes that wraps the file in chunks to allow for easier expanding of the format going forward.
 - Major improvements to the LOD system allowing for far larger view distances.
-- Begin switching from refering files by filenames to referencing by numeric FileDataIDs instead.
+- Begin switching from referring files by filenames to referencing by numeric FileDataIDs instead.
 - Many changes to DB2 files over the course of the expansion (from version 2 to 7).
 - (7.0.3) Fully switch over to DB2s to allow hotfixing all the things.
 - (7.2) Drop ADB files and add DBCache.bin file to replace them for hotfix storage.
@@ -118,7 +120,7 @@ Most of the changes to the WoW engine obviously came after its initial release i
 - Minor ADT additions to allow for color grading terrain tileset textures.
 
 #### 2022 - 10.x - Dragonflight
-- Added hot-reloading of the TACT filesystem allowing for the client to switch data builds without a restart (unused for now).
+- Added hot-reloading of the CASC filesystem allowing for the client to switch data builds without a restart (unused for now).
 - Updated filesystem to add TVFS (TACT Virtual File System) manifests. Required but older system is still in place for now.
 
 #### 2024 - 11.x - The War Within
