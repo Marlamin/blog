@@ -200,7 +200,7 @@ Over the years, we've seen more and more signs that Blizzard is trying to unify 
 
 For example, a few years ago Blizzard merged the interface code between all the clients, which is why stuff like [player housing-related API strings](https://www.mmo-champion.com/content/12993-Player-Housing-Interface-API-Strings) leak in 4.4.2 while this is a Midnight (or well, probably 11.2.x) feature. 
 
-DB2 files have also shared more and more layouts between Classic and Retail allowing for theoretical compatibility in terms of reading these files without having to restart. They also added a "schema" system to DB2s not too long ago that specifies the version of a specific DB2. The client only supports a single schema right now, but it could support multiple in the feature allowing it to seamlessly switch between different DB2 table layouts seamlessly. 
+DB2 files have also shared more and more layouts between Classic and Retail allowing for theoretical compatibility in terms of reading these files without having to restart. They also added a "schema" system to DB2s not too long ago that specifies the version of a specific DB2. The client only supports a single schema right now, but it could support multiple in the feature allowing it to seamlessly switch between different DB2 table layouts. 
 
 Blizzard has also been put time into making "gamemodes", not only for Classic but also for Retail (e.g. Plunderstorm and the upcoming spooky thing). They've also mentioned that it is hard to change things in e.g. Season of Discovery without changing anything in Classic Era, Hardcore or vice-versa is sometimes hard or even impossible. 
 
