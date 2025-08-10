@@ -8,7 +8,7 @@ image: https://marlam.in/u/chrome_kKn3ecg5Hd.png
 date: 2025-08-10
 ---
 
-_This post was mirrored from [my Patreon](https://www.patreon.com/marlamin). TL;DR: Blog posts will still be freely available on this blog but I will likely start doing monthly update posts on the Patreon._
+_This post was mirrored from [my Patreon](https://www.patreon.com/marlamin). TL;DR: Blog posts will still be freely available on this blog but I will likely start doing monthly update posts on the Patreon. Only this initial announcement was mirrored._
 
 ### Housekeeping/TL;DR
 Hello again! Earlier this month I sent out a message to all (somehow still) active members that the Patreon had a chance of being reactivated and clearly I've come to a decision, if you're curious why etc, keep on reading, if not; if you are still subscribed to the Patreon and are willing to support me again, you will likely have to reselect a membership tier.
