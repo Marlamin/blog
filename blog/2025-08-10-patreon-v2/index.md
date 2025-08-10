@@ -15,7 +15,7 @@ Hello again! Earlier this month I sent out a message to all (somehow still) acti
 
 I'm hoping existing members won't get automatically charged again (would be weird after years of inactivity and me removing all old tiers), if you do I apologize and do not blame you for canceling.
 
-With that out of the way, here's something I wrote up about reactivating the Patreon:
+With that out of the way, here's something I wrote up about reactivating the Patreon...
 
 <!--truncate-->
 
