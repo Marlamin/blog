@@ -2,7 +2,7 @@
 slug: patreon-v2
 title: Hello, and again, welcome... (Patreon)
 authors: marlamin
-tags: [wow, world-of-warcraft]
+tags: [life-updates]
 enableComments: true
 image: https://marlam.in/u/chrome_kKn3ecg5Hd.png
 date: 2025-08-10
