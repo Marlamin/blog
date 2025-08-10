@@ -74,6 +74,11 @@ const config = {
             label: 'My BlueSky',
             position: 'left',
           },
+          {
+            href: 'https://patreon.com/marlamin',
+            label: 'My Patreon',
+            position: 'left',
+          },
         ],
       },
       colorMode: {
