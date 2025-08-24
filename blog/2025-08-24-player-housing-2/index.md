@@ -5,7 +5,6 @@ authors: marlamin
 tags: [wow, world-of-warcraft]
 enableComments: true
 image: https://marlam.in/u/Discord_i03KeSMlAV.png
-unlisted: true
 ---
 
 Since my [last post on Player Housing](/player-housing-1), Blizzard has released a few more blog posts and has demo'd player housing/given interviews at Gamescom, leading to many more thoughts! Here we go.
