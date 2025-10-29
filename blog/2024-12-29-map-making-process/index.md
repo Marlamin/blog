@@ -129,7 +129,7 @@ _Early Shadowlands kit for The Maw showing similar statuses to the 10.2 kit. Cli
 This is another step that likely goes on during the entirety of zone development and is basically just a further along version than the rough texturing step mentioned above where artists do more refined/detailed texture painting, paint (or paint out) where ground effects are (e.g. the grass and stuff) as well as do vertex color painting on top of the painted textures. 
 
 ### Vertex shading
-Vertex shading/painting was introduced in WotLK and heavily used in Cataclysm and every expansion afterwards. Blizzard painting it was first shown to the public in [at BlizzCon 2009](https://youtu.be/3FjuEPnuKtU?t=205). This feature allows artists to paint colors on top of existing tilesets which adds much more variance and detail to the terrain instead of having the same colored tileset everywhere. 
+Vertex shading/painting was introduced in WotLK and heavily used in Cataclysm and every expansion afterwards. Blizzard painting it was first shown to the public [at BlizzCon 2009](https://youtu.be/3FjuEPnuKtU?t=205). This feature allows artists to paint colors on top of existing tilesets which adds much more variance and detail to the terrain instead of having the same colored tileset everywhere. 
 
 The difference in terrain with and without vertex painting is huge, as can be seen in the below image shared by Josh Navarro in [this ArtStation post on the development of Highmountain](https://www.artstation.com/artwork/Xn5xAw).
 
