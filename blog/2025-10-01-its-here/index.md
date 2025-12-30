@@ -19,6 +19,7 @@ This means the tavern "far away from her *(Xal'atath)* reach" ([#1](https://marl
 
 With it now being a 'story hub', my battle for its use in the game is over. Thank you, Blizzard.
 
+<!-- truncate -->
 That said, 2025 isn't over yet.
 
 [![https://marlam.in/u/u74RdOWXnc.png](https://marlam.in/u/u74RdOWXnc.png)](https://bsky.app/profile/marlam.in/post/3len6actw5k22)

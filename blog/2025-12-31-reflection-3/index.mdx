@@ -1,0 +1,359 @@
+---
+slug: reflection-2025
+title: Reflection 2025
+authors: marlamin
+tags: [life-updates]
+enableComments: true
+image: https://marlam.in/u/reflection-2025.jpg
+unlisted: true
+---
+
+Another year, another blog post reflecting on it. This one has been a rollercoaster. I started these reflection posts in 2022 and I can with confidence say that this year is the lowest of lows so far, while also having some highs in terms of what I've been working on. 
+
+I'll start with all of the major updates to the projects I've been working on this year as well as looking forward a bit to the plans I have for various projects next year. I'll end the post with personal updates, that bit is largely for myself as I've talked about in previous reflection posts, but feel free to read it regardless.
+
+<!-- truncate -->
+
+## Project updates
+### wow.tools.local (WTL)
+If you're not familiar with WTL, it is a locally runnable replacement of the old wow.tools site I hosted with various WoW datamining tools. I have already talked about wow.tools and everything around it a lot in previous reflection posts.
+#### Looking back at 2025
+A good bit of the time I spent on personal projects this year was spent on WTL. Several major versions got shipped, each with some notable changes that I'll list below *(there are many more changes, but I refer you to the full changelogs on the releases page for that)*.
+
+Version [0.6.3](https://github.com/Marlamin/wow.tools.local/releases/tag/0.6.3) introduced experimental support for [TACTSharp](https://github.com/wowdev/TACTSharp), a library to read WoW's data files either from online or from disk, as an alternative to existing library, [CascLib](https://github.com/WoW-Tools/CascLib). CascLib is fine and battle-tested, but TACTSharp is a bit slimmer around the edges and just all-round faster. It still has a few issues, but is stable enough to run with WTL.
+
+[0.7.0](https://github.com/Marlamin/wow.tools.local/releases/tag/0.7.0) and almost every release since improved upon TACTSharp support, with TACTSharp becoming the new default over CascLib in 0.7.3. 0.7 also introduced support for loading remote builds and switched to Binary DBDs (much faster to update).
+
+[0.8.0](https://github.com/Marlamin/wow.tools.local/releases/tag/0.8.0) introduced the rework to hotfixes with hotfix metadata now being tracked between branches/products instead of just being whatever hotfixes are available on disk for the currently loaded product. 0.8.0 also added experimental partial support for M3 models, a model format (eventually?) replacing M2 models. 0.8.2 introduced the settings page so you no longer have to mess around with editing `config.json` manually.
+
+[0.9.0](https://github.com/Marlamin/wow.tools.local/releases/tag/0.9.0), the latest release, introduced a new manifest storage format to replace the old text-based manifests as these were growing a bit out of hand in terms of used disk space for many users. The manifests in the new format are about half the size of the old ones.
+
+#### Plans for 2026
+##### Cache file browsing
+This has been on the list for a while (and has been worked on a few times), but I want to add the ability for users to browse what is in the various cache files. Quest and Creature caches are already partially parsed for a few things, but they aren't *really* browseable. 
+
+##### External sources for hotfixes
+Both Raidbots and wago have made caches uploaded through their services publicly available to an extent, and it would be cool if WTL was able to automatically use these caches instead of having to start WoW to fetch hotfixes purely to update WTL, which I know a few people are doing.
+
+##### Minimap browser
+I'd like to add minimap browsing into WTL proper, there has been a hidden /maps/ page for a while which is in various states of being broken depending on what product you're looking at. I want to finish that up.
+
+##### Shared modelviewer with wow.export?
+The modelviewer for WTL which was originally written for the wow.tools website by Deamon hasn't been updated in a while and it is slowly falling behind with certain newer models not loading properly. We are however in the middle of rewriting the wow.export modelviewer to be more correct, and it may be good enough at some point to use in WTL as well. When it is good enough I'll add it as an alternative modelviewer to use in WTL and if the old one ever breaks completely or the new one gets on par with the old one (which is very far away, it doesn't even know what particles are yet), I'll switch it over by default.
+
+#### Hosted mode
+I already started initial work on this, but I want to bring back some semblance of making it easier to host WTL as an online site. Certain features like the settings pages, switching builds and other things that affect state/things on disk are disabled, but other stuff like browsing DB2s/files etc should work as usual.
+
+### wow.export
+If you are not familiar, wow.export is a replacement for an export tool I made many years ago that allowed you to export things from WoW into a more common 3D file format for importing into e.g. Blender. wow.export has far outgrown the features that tool had. [Kruithne](https://www.patreon.com/kruithne) leads the project and I regularly try to contribute as well.
+
+#### Looking back at 2025
+##### 0.2.0
+wow.export had a lot of work done this year, I helped out/guided a few things, but 99% of it was Kru's work, so I won't go into *too* much detail on all the work they did, but I'll try and summarize the big things per update below.
+
+![https://marlam.in/u/chrome_bfz9c9RXqD.png](https://marlam.in/u/chrome_bfz9c9RXqD.png)
+
+The first update of the year, [0.2.0](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#020-01-10-2025), shipped in October with the following features: 
+- Animation previews in the modelviewer
+- Support for liquids in the Blender add-on
+- Heightmap exports
+- Partial experimental M3 support (I did that one!)
+- Map selections can now be exported as PNG (e.g. like the minimaps on map.wow.tools!)
+- DB2/data table support
+- Much faster loading
+- More work towards cross-platform support
+- Various internal changes
+##### 0.2.1-0.2.4
+All of these updates were largely fixes for stuff that broke in 0.2.0 with a few additions here and there as well. You can view the full changelogs [here](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#024-14-10-2025).
+##### 0.2.5
+[0.2.5](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#025-21-11-2025) is another big one.
+- Huge performance boost
+- Support for legacy MPQ installations (0.x - 3.x, Cata/MoP support planned but NYI)
+- Character customization UI revamp in preparation for additional things coming later (see below)
+- Initial support for Midnight map exports supporting more than 4 layers of terrain textures
+##### 0.2.6
+[0.2.6](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#026-24-11-2025) was largely just fixes for whatever broke in 0.2.5.
+##### 0.2.7 (The Christmas Miracle)
+[0.2.7](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#027---the-christmas-miracle-23-12-2025) -- dubbed The Christmas Miracle adds long awaited support for character exports WITH armor/weapons. There are a lot of other additions as well, so check out the full changelog in the link.
+##### 0.2.8 & 0.2.9
+Mostly fixes for issues introduced in the above update. Similar to the above, full changelogs can be found [here](https://github.com/Kruithne/wow.export/blob/main/CHANGELOG.md#029).
+
+#### Plans for 2026
+##### Further character customization fixes
+Proper character exports with equipment is hard and there's a list of issues we're tracking. Kru is hard at work at adding support for missing features and getting fixes out for issues, expect an update early on in 2026.
+##### Dye support
+I'm planning on adding dye support to decor models that support it, I've already done so for work so might as well for wow.export too.
+##### Modelviewer improvements
+My goal is to get the built-in modelviewer as good as I can humanly get it. I don't think I'll be able to reach Deamon or even WoWDB levels of accuracy, but I strive for it to be significantly more useful than it is now.  
+##### Hotfix support
+This has been on the list for a while, but support hotfixes when loading local clients, or downloading the latest hotfixes from either Wago or Raidbots (just like is planned for WTL), is something I really want to do. It will not only make for more accurate DB2 browsing/exports, but these days the various hotfixes Blizzard can do can also affect data used in other parts of wow.export, which would currently be 'behind' until Blizzard ships a new build with said hotfixes included.
+##### DB2 reader improvements/feature matching with WTL
+wow.export's DB2 browsing experience still lacks a lot of context for certain fields. This in part is due to a few missing features, but also a lack of data available to the application itself. I'm expecting this to become easier with the enum/flags additions in the works for WoWDBDefs (see below), after which it should be relatively easy to adopt similar features that WTL has for DB2 browsing into wow.export.
+
+### Archive
+The archive is a backup of Blizzard's official CDN data for WoW starting with Warlords of Draenor (6.0) which was WoW's first version using [NGDP](https://wowdev.wiki/NGDP)/[TACT](https://wowdev.wiki/TACT).
+
+#### Looking back at 2025
+The wow.tools archive went down in 2025 with the retirement of the box it ran on due to ongoing costs and since with it quite frankly only really hosting the archive, not really being worth it. However, now with the funds of the Patreon I have recebtky been able to get a smaller VPS with attached network storage making it far cheaper to host. It is back up [here](https://archive.wow.tools/) now.
+#### Plans for 2026
+##### Automated updates
+While the CDN on disk is already automatically being updated every so often, the file listing as well as main page aren't updated regularly. 
+##### Sync with other archives
+We're trying to work out some sort of syncing between the various TACT archives out there (Wago, Arctium) for optimal file integrity/availability.
+##### Older non-TACT archives
+The archival project in the datamining discord has led to some amazing progress in terms of archiving complete installations and patches for 0.x-3.x, currently available as torrents, but as per Blizzard's patch mirroring policy, could also be re-hosted on the archive. 4.x and 5.x need some work from my end to get properly installable and hosted (unless someone else does it), so stay tuned for that.
+
+### Minimaps
+#### Looking back at 2025
+The minimaps site initially went under together with wow.tools, but I brought it back shortly afterwards as its own subdomain on [map.wow.tools](https://map.wow.tools). There were a few fixes to the tooling in 2025, but outside of that there were no notable updates. However, as I'm writing this I'm moving over all the tiles to the new box that also hosts archive.wow.tools because the home server they were hosted on died, so hopefully when this blog post comes out in 2 days it is back in working order.
+#### Plans for 2026
+##### Automated updates
+Since the minimap tiles are now hosted on the same box as the CDN archive, I can automate updates for it since it should have all the data it needs.
+
+### Noggit
+#### Looking back at 2025
+I mentioned some of the work I've been doing on Noggit, a community map editor for WoW, at the end of [a previous blog post](/modding-wow-part2). While most of the changes to Noggit from that version were just merged together changes from various authors, that isn't the case for the experimentation I did earlier this year. I am going to go into a bit of detail here since I don't think I've done so publicly yet (although my memory is awful considering what happened this year).
+
+In June I set out to try and add support for loading modern clients to Noggit, starting with 9.2.7 (Shadowlands), which is the client version we were targeting in previous blog posts. 
+
+The first thing I tackled was loading the modern filesystem (CASC) instead of the old MPQ based filesystem. Partial support for CascLib was already present, but it was out of date and required some fixing up to work with 9.2.7. The same was true for loading database files (DB2 now instead of DBC) and the library used for it also partially supported DB2s already, but not the version I was targeting. 
+
+After fixing up those two things, I was able to load the map selection screen with maps from 9.2.7!
+
+![https://marlam.in/u/a1wZ1qVqWo.png](https://marlam.in/u/a1wZ1qVqWo.png)
+
+The next major thing that needed rewriting was the way that files are loaded. Old Noggit expects files to be of a specific (older) format, with the chunks inside the files being in a specific order. More modern versions of those file formats are a bit more expansive with lots of optional chunks and stuff, so that was the first major rewrite. First up was adding support for modern WDT and ADT files, starting with WDT files first to get the list of ADT files a map uses, and then support for root ADTs (containing largely only 3D terrain data).
+
+With support for root ADTs I was once again able to open up maps. They did look like garbage though with only basic terrain and vertex shading present.
+
+![https://marlam.in/u/oPZjTmD5b9.jpg](https://marlam.in/u/oPZjTmD5b9.jpg)
+
+Next up was support for tex0 ADTs, which contain texture data, here are some of the screenshots of the main Shadowlands map I made during development/testing.
+
+![https://marlam.in/u/BDgcUJ6d1h.jpg](https://marlam.in/u/BDgcUJ6d1h.jpg)
+![https://marlam.in/u/ucbDZuFBKD.jpg](https://marlam.in/u/ucbDZuFBKD.jpg)
+![https://marlam.in/u/TDTE1kAB5O.jpg](https://marlam.in/u/TDTE1kAB5O.jpg)
+![https://marlam.in/u/daMwcaAzUr.jpg](https://marlam.in/u/daMwcaAzUr.jpg)
+
+With terrain texture support largely out of the way (some improvements still need doing), it was time to move on to objects. WMOs (world model objects) have seen a lot of changes since 3.3.5/WoTLK/2010, but after a similar rewrite to the above, I managed to get basic WMOs loading in.
+
+![https://marlam.in/u/5QfMTpeD8x.jpg](https://marlam.in/u/5QfMTpeD8x.jpg)
+
+One more fun thing that I wanted to try is what would happen if I loaded up a The War Within client instead of a Shadowlands one. A few more years of changes, but nothing drastic given the above rewrites made it much easier to add support for those changes. Lighting, water and newer shaders are still broken in these screenshots, but you get the gist of it.
+
+![https://marlam.in/u/5hOwJqqE8J.png](https://marlam.in/u/5hOwJqqE8J.png)
+![https://marlam.in/u/QxvR3RGvEb.jpg](https://marlam.in/u/QxvR3RGvEb.jpg)
+![https://marlam.in/u/lf9g0Rkwye.jpg](https://marlam.in/u/lf9g0Rkwye.jpg)
+
+That's where the experimentation largely ended, but I hope to pick it up again at some point in the future and maybe get it into a usable state.
+
+#### Plans for 2026
+##### Replace CascLib with TACTSharp
+Noggit uses [Ladik's CascLib](https://github.com/ladislav-zezula/CascLib) (not the C# one) to load modern clients. While it works, it is rather slow to initialize so I want to replace it with [TACTSharp](https://github.com/wowdev/TACTSharp), which even though is a C# library, can be made into a native library that Noggit can talk to. I experimented with that in June as well, [managing to get an M2 file extracted in a C++ application using native TACTSharp bindings](https://marlam.in/u/devenv_YT5nIRHq2d.mp4), but that was hacky as hell and needs a ton more work. Deamon has also ported TACTSharp to C++ [here](https://github.com/Deamon87/TactCpp), so I need to take a look at that as well.
+##### Fix up various issues with modern formats
+Outside of generic format issues, a lot of other stuff is also not yet supported. Support for new shader types, for M2/WMO and ADTs, is still missing and will require a lot of work. Many other newer features these newer file formats make use of are also still missing. I'm hoping that the work on the wow.export modelviewer will help a bit here as well.
+##### Implement basic saving
+To get it into a usable state, you need to be able to actually edit and save terrain. Writing out ADTs in the new format is not something I've ever done, so that'll be a first. DB2s might be doable through native bindings for DBCD, but that is an entire separate problem.
+##### Work towards phasing out external tooling
+The [current pipeline for making terrain for modern clients](https://marlamin.github.io/modern-map-making/category/basic) is rather painful since it involves a lot of external data/tools you have to set up, only to be required to still use even more tools to convert your map from 3.3.5 to a modern format every time you save. If Noggit can save files in newer formats, it should be trivial to add support for some of the things the external tooling does too, such as hot-reloading in-game terrain on supported clients.
+
+### Listfile
+The community listfile is a mapping to go from ID => Filename. If you want a history lesson on WoW and filenames, check out my community council post [here](https://us.forums.blizzard.com/en/wow/t/community-tools-filenames/1179183). TL;DR unless a file is an interface file we don't have an official filename for it and we have to guess one ourselves.
+
+#### Looking back at 2025
+The [listfile repo](https://github.com/wowdev/wow-listfile) had around 450 commits this year! Some of the tooling was improved as well to detect common issues when merging in new files, or protecting things we have filename hashes for from being incorrectly named.
+#### Plans for 2026
+##### More automatic naming
+WTL has an automatic naming function in it that handles most of the automatic naming when Blizzard adds new content. However, there's still a lot of stuff and heuristics missing that can improve said automatic names. Right now I'm still working on improving automatic player housing related names, Blizzard gave us partial filenames for some of these but most things are unfortunately unnamed. I don't know what is next after player housing names, but there's quite a few angles of attack that can be picked, so we'll see. 
+
+##### Interface names
+Blizzard has also taken steps that indicate they might be removing interface filenames for non-lua/xml/toc files. This is something we're keeping an eye on.
+
+##### Tag based listfile
+This has been mentioned a few times over the years, even to the point where I've had multiple disconnected people suggest the same idea, and I think it is nearing a point where I have a good enough overview of what I'd like to do here. The basic idea is to have a list of tag groups, tags and then adding tags to files by their ID. This is basically the same as many other tag systems work, including how Blizzard (mostly) implemented the tags they're using for the player housing system, although the tag groups currently being thrown around are far more expansive than the ones for player housing. A certain tag group can also have multiple tags assigned to it per file, e.g. a mount could be both a "Creature" and a "Mount" model type.
+
+There should be basic tags like "file type" which would just be "MP3", "BLP Texture", "Root WMO", "Group WMO" etcetera, or a tag in which expansion a file was added, e.g. "The Last Titan" or a patch, e.g. "13.0.1". These already get rid of several limits we have in categorizing files right now, most of which are filename-based. 
+
+After that you could imagine tags like zone, race, creature type, model type, if a model is a mount/pet or not, etc. There are a lot of tags one can come up with and if you got this far in the post, I'm curious to hear what kind of file tags you'd like to see. Most of these would be somewhat automated, but there is room for manual tagging as well.
+
+Here's some random file examples to give you a better idea of what this could look like, note that all these are made-up/non-automated and I've listed filenames for ease, the actual tags are ID-based.
+
+**Sound/music/ZONEMUSIC/BladesEdge/BL_DryForestWalkUni03.mp3 (ID 53352)**
+- Expansion: The Burning Crusade
+- Patch (added): 2.0.0
+- Build (added): 5894
+- File Type: MP3
+- Filename status: Official
+- Music Type: Zone Music
+- Continent: Outland
+- Zone: Blade's Edge Mountains
+
+**Interface/ICONS/INV_Enchant_DreamShard_02.blp (ID 237015)**
+- Expansion: Wrath of the Lich King
+- Patch (added): 3.0.1
+- Build (added): 8303
+- File Type: BLP Texture
+- Filename status: Official
+- Texture Type: Icon
+
+**Creature/ChessMount/ChessMount.m2 (ID 6879962)**
+- Expansion: The War Within
+- Patch (added): 11.1.7
+- Build (added): 60520
+- File Type: M2 Model
+- Filename status: Community-named, official basename
+- Model Type: Creature, Mount
+- Mount Name: Grandmaster's Prophetic Board
+- Mount Type: Ground, Flying
+- Item Source: Trading Post
+
+**World/Expansion11/Doodads/PlayerHousing/12PH_Opulent_WaterWell01.m2 (ID 7552514)**
+- Expansion: Midnight
+- Patch (added): 12.0.0
+- Build (added): 64499
+- File Type: M2 Model
+- Filename status: Community-named, official basename
+- Model Type: Doodad, Player Housing Decor
+- *(... and we could list official tags from player housing here as well!)*
+
+Not only could this improve searches/filtering in applications such as wow.tools.local or wow.export (which is something users often hit), it could also help with file naming and various other things. Tagging of files can also be better automated than how file naming currently works as they are much harder to mess up and easier to verify. Looking forward to messing with this, hopefully at some point in the new year.
+
+### WoWDBDefs
+[WoWDBDefs](https://github.com/wowdev/WoWDBDefs) has database table definitions for tables in WoW across many versions allowing for the data in these tables to be much easier to work with, or even human-readable through tools like WTL or [wago.tools](https://wago.tools/db2).
+
+#### Looking back at 2025
+The state of WoWDBDefs in 2025 is pretty healthy, Blizzard hasn't thrown us any wrenches for a few years now (oh boy I had to say it) and the format is stable right now. This year alone the repository had around ~430 commits, most of which were automated to update DB definitions within minutes after Blizzard pushing a build and wago.tools detecting it and firing off the pipeline. 
+#### Plans for 2026
+##### Definitions for WoD/Legion
+This is a todo-list item that comes back every year and I won't be surprised if it doesn't make it in 2026 either, but we want to add automated dumping support and definitions for WoD/Legion which have a lot of missing versions still. Schlumpf [started a PR for it](https://github.com/wowdev/WoWDBDefs/pull/195) but we haven't really had time to give it the attention it needs as it is one of those eternal backlog things. Hopefully me putting it on this list makes me come back to it regularly to the point where I'll drag it across the finish.
+##### Enums/flags
+Right now each project (WTL, wago, SimulationCraft, TrinityCore, etc) has their own dataset when it comes to enumerations/flag field definitions. This is something we wanted to add in [V2 of the DBD format](https://github.com/wowdev/WoWDBDefs/discussions/109) but due to no movement on that for years now, we decided to [lift it out of V2 and add separately](https://github.com/wowdev/WoWDBDefs/discussions/207). With this it would be easier to document enums/flags and have them update across several tools that are willing to adopt it. Hoping to get this going in 2026 and maybe implemented in WTL as well.
+
+### DBCD
+[DBCD](https://github.com/wowdev/DBCD/) is a C# library used to read WoW's DBC/DB2 files and make the data inside easily accessible to tools.
+#### Looking back at 2025
+There wasn't a lot of work done on DBCD in 2025 since the DB2 format has been pretty stable (oh boy, I said it again). There were a few fixes and an update to .NET 10 + NuGet releases, but nothing crazy. 
+#### Plans for 2026
+##### Native version
+This is a tough cookie to crack, but it would be helpful to other tools if this wasn't a C#-only library. There are a lot of problems that need resolving for that, especially when it comes to reflection and stuff, but maybe with Noggit needing proper DB2 loading/saving I might finally tackle this.
+
+### TACTSharp
+[TACTSharp](https://github.com/wowdev/TACTSharp) is a C# library used to read WoW's storage system, either from CDN (TACT) or disk (CASC). 
+#### Looking back at 2025
+TACTSharp's first usable versions came out in January 2025 based on experiments by schlumpf to make a faster, largely memory-mapped way, to read TACT/CASC storage after I was struggling with getting anything that used CascLib to run on my NAS. It has matured a lot and is now used in 'production' by wow.tools.local as well as a few tools I use at work. There is still a way to go, though!
+#### Plans for 2026
+##### 1.0
+There are still some random issues that need tracking down, as well as checking if the library supports *ALL* versions of WoW. Proper support for encrypted products (it works but is rough) and some other tidbits still need doing, after which it is probably ready for some rigorous testing (which we also need more automated tests for) and then a tag as 1.0/stable.
+##### Native version
+With my Noggit experimenting I got TACTSharp roughly working as a native-callable library by Noggit (see above), but I quite frankly had no idea what I was doing and still don't, so that'll need some actual work to get going, or just by stealing Deamon's native port of TACTSharp. We'll see!
+
+### s&box mount
+*(This paragraph and the 2025 look-back is an excerpt/copy from my August 2025 [Patreon](https://www.patreon.com/c/marlamin) post). There have been no S&Box-mount related updates since.*
+
+Some of you may be familiar with Garry's Mod, an old Source Engine-based sandbox game that was known for its modability as well as ability to use content from other installed Source Engine games. [s&box](https://sbox.game/) is a love letter to that idea but far more moddable than Garry's Mod ever was. It runs on Source 2 which I already have some experience of from my SteamDB datamining days, so messing with it has been quite fun. 
+
+One of the features that s&box is working on right now is mounting other games. While they are targeting primarily Steam games (especially for use in the in-game sandbox) I decided to make a mount for a famously non-Steam game, WoW. I started out with testing this in Sandbox gamemode the game has, but it has some issues still that make it hard to work with large mounts such as WoW, so I switched to the editor which is a bit more refined and has less restrictions.
+
+#### Looking back at 2025
+<details>
+    <summary>This has a lot of images and is technically old content for those who have already ready the Patreon post, so I've collapsed it by default.</summary>
+
+First off, I wanted to see how far I could get opening a single M2 in the game before committing to properly mount the game. I opened up WTL, grabbed a test M2 and started writing some code. The first attempt wasn't super successful, but you can at least kinda tell what it is supposed to be.
+![https://marlam.in/u/sbox_PTfpHaUseG.png](https://marlam.in/u/sbox_PTfpHaUseG.png)
+Some fixes later and I had model geometry correctly importing. I also tried loading a more complex model with multiple submeshes (Anduin's in-game cinematic model). You can see the above model in the picture as well in it's original imported scale.
+![https://marlam.in/u/sbox_uLLqBqnZOr.png](https://marlam.in/u/sbox_uLLqBqnZOr.png)
+Next up was getting texturing going. This involved extracting some BLPs from the game, but I didn't want to bother writing BLP support yet so I converted them to PNG first.
+
+Here's a video I recorded right after the first texturing attempt: [https://marlam.in/u/sbox_vtL7AYhoCC.mp4](https://marlam.in/u/sbox_vtL7AYhoCC.mp4). As you can see there were some various issues still, but I felt that those were fixable and decided to start work on properly mounting WoW inside s&box without any manual extraction/conversion in-between as god (the Facepunch team working on s&box) intended.
+
+To do that, I needed several things. s&box's preferred (and only?) programming language of choice is C# and it turns out I already have various libraries to deal with WoW's stuff, so I could just use those, right? Well, kinda. I haven't figured out how to load external libraries in s&box so I've just been copy pasting entire libraries worth of code into my project to compile it with it instead of referencing the libraries.
+
+![https://marlam.in/u/devenv_NVgaNbbCHC.png](https://marlam.in/u/devenv_NVgaNbbCHC.png)
+
+Above you can see libraries for BLPSharp (texture reading), TACTSharp (game archive reading), TinyBCSharp (dependency for BLSSharp) and WoWFormatLib (WoW file format parsing). It turns out copying them in was a good choice since there were some code restrictions still that I had to work around to get them to work with s&box. But after that was done and I hooked up all the required things together, s&box was able to directly open stuff from WoW's storage on disk (or over network from the internet). In the meantime I also added basic WMO geometry support. Here's a video of me scrolling through a model list of various models, all loaded directly from WoW's game files: [https://marlam.in/u/sbox_KZxelVroZi.mp4](https://marlam.in/u/sbox_KZxelVroZi.mp4)
+
+Shortly after this I recorded another quick proof of concept video for BlueSky with various different models (still with their texture issues): [https://marlam.in/u/sbox_1WbqxtsnJp.mp4](https://marlam.in/u/sbox_1WbqxtsnJp.mp4)
+
+Next up I tried to get basic ADT (terrain) support going, but I got stuck on this pretty fast with the mesh being turned inside out which causes the top part of the mesh to actually be the backside, making it pretty much invisible.
+
+![https://marlam.in/u/sbox_NMq3rnLKnp.jpg](https://marlam.in/u/sbox_NMq3rnLKnp.jpg)
+![https://marlam.in/u/sbox_0zJlQjiok2.jpg](https://marlam.in/u/sbox_0zJlQjiok2.jpg)
+
+So yeah, I shelved that for a bit and moved on to fixing M2 texturing. The issue turned out to be a simple mistake where I made submeshes use 3 times as much vertices as they were meant to (I copied my 3D processing code from something that expected a triangle count, not vertice count). With that fixed, M2s now looked much more presentable. Still no custom shaders or transparency/blending support, but much better!
+
+![https://marlam.in/u/sbox-dev_fdQ1F2bupf.png](https://marlam.in/u/sbox-dev_fdQ1F2bupf.png)
+
+At this point, I had also switched to the editor. The editor can hot-reload/compile code while you change it which makes iteration much faster than having to restart the game after each change/compile you do. It also has less restrictions, so that's great as well. Here's 2 minutes of me messing around in the editor with various M2s: [https://marlam.in/u/sbox-dev_AmwfG3ty6D.mp4](https://marlam.in/u/sbox-dev_AmwfG3ty6D.mp4).
+
+One cool thing about the s&box editor is that they're also working on making it into a movie maker, similar to what Source Filmmaker was for Source 1. Right now you can manipulate properties on things with keyframe-based timelines. Here's me figuring that out and making a very basic model move around: [https://marlam.in/u/sbox-dev_NhrB77TVpo.mp4](https://marlam.in/u/sbox-dev_NhrB77TVpo.mp4).
+
+I also added support for basic WMO texturing shortly after this, allowing me to spawn in WotLK Dalaran looking pretty snazzy.
+
+![https://marlam.in/u/sbox-dev_dnHNlM42Qb.png](https://marlam.in/u/sbox-dev_dnHNlM42Qb.png)
+
+Next up: MAPS! Oh boy, here we go. I've written things that load WoW maps 3-4 times now and each time I run into the same kind of issues. Surely not this time.
+
+First up was figuring out the issue with the inverted terrain mesh. This took me longer than I liked, but changing the triangle order fixed it.
+
+![https://marlam.in/u/sbox-dev_wvUrz17Gig.png](https://marlam.in/u/sbox-dev_wvUrz17Gig.png)
+*Who's that Pokémon, I mean, WoW zone?*
+
+With that fixed, I needed to slap some textures on there so my eyes didn't hurt as much. For the first iteration I decided to just slap some pre-baked textures on there that Blizzard uses for terrain in the far distance so your computer doesn't melt. I don't have a screenshot of just that working, but here's one closely after with the test map of my choice (Winter Arathi Basin) with some additional models spawned in for fun.
+
+![https://marlam.in/u/sbox-dev_XTTeSWz6Uc.jpg](https://marlam.in/u/sbox-dev_XTTeSWz6Uc.jpg)
+
+Now for the thing that always gives me trouble. Coordinate system conversions/math.
+
+![https://marlam.in/u/sbox-dev_1p43uOBXk8.png](https://marlam.in/u/sbox-dev_1p43uOBXk8.png)
+
+Wish I could say I easily figured that out, but it took me a full hour of messing with various formulas to get right.
+
+![https://marlam.in/u/sbox-dev_KNlfy85Raf.jpg](https://marlam.in/u/sbox-dev_KNlfy85Raf.jpg)
+
+One of the related issues causing the added difficulty is that I scale up all the 3D data by 40 to be big enough to kinda match the s&box scale so when things were wrong they were 40x as wrong. WoW's models being generally low fidelity compared to what s&box expects makes them really really tiny if I don't apply that scale transformation.
+
+With Winter AB being correct I decided to see how hard I could push s&box/Source 2.
+
+![https://marlam.in/u/sbox-dev_uOm4MKGTKH.jpg](https://marlam.in/u/sbox-dev_uOm4MKGTKH.jpg)
+
+First off, Teldrassil. Wasn't exactly high FPS but it worked fine. Then I just kept zooming out.
+
+![https://marlam.in/u/sbox-dev_Bx0AjtQ4O5.png](https://marlam.in/u/sbox-dev_Bx0AjtQ4O5.png)
+
+Every frame took well over a second to render, but it works! However, these were still only the low-res long distance textures slapped on terrain which meant only a few hundred textures were loaded here which isn't that much. The step from those textures to proper height-blended terrain textures is a big one, but I've done it before so it should be doable!
+
+![https://marlam.in/u/sbox-dev_b90VEKSx7l.jpg](https://marlam.in/u/sbox-dev_b90VEKSx7l.jpg)
+
+My first attempt after an hour or 3 of work was actually already pretty good. The biggest issue is that chunks don't properly blend together well. Part of the problem there was that I used logic from a GLSL shader in HLSL which handles sampling slightly differently. After fixing that, the lines were MUCH smaller, but still there.
+
+![https://marlam.in/u/sbox-dev_HMB6INzdhG.png](https://marlam.in/u/sbox-dev_HMB6INzdhG.png)
+
+Here's a video of me trying to show how small but still annoying the lines were: [https://marlam.in/u/sbox-dev_3HZ0R5PYpX.mp4](https://marlam.in/u/sbox-dev_3HZ0R5PYpX.mp4)
+
+Fellow model/map renderer Zee suggested I mess with the precision a little which helped a bunch as well. The lines are technically still there if you pay attention but are largely invisible now. There's also an issue with the alpha maps not transitioning properly between chunks which causes the textures to be cut off a little. One more issue happens when there's less than 4 layers of textures on a chunk, but I'll fix that later too.
+
+![https://marlam.in/u/sbox-dev_Wy3AdSUa9T.jpg](https://marlam.in/u/sbox-dev_Wy3AdSUa9T.jpg)
+
+With height-based terrain texturing being good enough for now, there's another thing Blizzard makes heavy use of on their terrain and that is vertex coloring. This allows them to shade terrain textures with per-vertex colors. It's hard to explain so here's a comparison.
+
+![https://marlam.in/u/sbox-dev_b8aJTgq1kt.jpg](https://marlam.in/u/sbox-dev_b8aJTgq1kt.jpg)
+*Vertex colors OFF*
+
+![https://marlam.in/u/sbox-dev_t7YqtEH0BA.jpg](https://marlam.in/u/sbox-dev_t7YqtEH0BA.jpg)
+*Vertex colors ON*
+
+And yes, the big purple things are WMOs with unsupported materials/shaders. I need to fix that too. As soon as things get a bit further along, there's a good chance I might try and make a test machinima with the s&box editor/movie making tooling.
+</details>
+
+#### Plans for 2026
+##### Update for latest s&box
+s&box has had a lot of changes since August and is heading for a release in early 2026, so I need to update the above mount and get it into shape, if it is still supported to mount non-Steam games, that is.
+
+##### M2 bone support
+M2s are missing bones/animations so their models are stiff and can't really be dragged around or anything. This should probably exist before releasing it in any manner.
+
+##### M2/WMO shader improvements
+The shaders I made so far are extremely basic and don't support most of the fancy blending and stuff. With the work we're doing and knowledge we're gaining on doing this for wow.export, I can probably take that and apply it to s&box shaders as well. 
+
+## Personal updates
+*TODO*
