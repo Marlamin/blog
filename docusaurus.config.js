@@ -69,6 +69,11 @@ const config = {
           src: 'img/logo.jpg',
         },
         items: [
+           {
+            href: 'https://github.com/marlamin',
+            label: 'My GitHub',
+            position: 'left',
+          },
           {
             href: 'https://bsky.app/profile/marlam.in',
             label: 'My BlueSky',
