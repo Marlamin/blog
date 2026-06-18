@@ -1,6 +1,6 @@
 ---
 slug: another-ai-rant
-title: AI anxiety
+title: AI anxiety & my future
 authors: marlamin
 tags: [rants]
 enableComments: false
@@ -13,21 +13,21 @@ This is yet another long AI-related rant, for my previous one/stance on AI [see 
 
 <!-- truncate -->
 
-## Recognition
-Today I saw people who I know are vehemently against the usage of AI happily promote the return of a popular piece of software after someone updated it out of nowhere, an update I think was entirely written by Claude. 
+### Recognition
+Today I saw people who I know are vehemently against the usage of AI happily promote the return of a popular piece of software after someone updated it out of nowhere, an update I think was entirely vibe-coded by Claude. 
 
 Guided by a human, sure, but I highly doubt said human wrote a single line of actual code. 
 
 Now, I think I am still able recognize the usage of AI in code and how much of it was written by a human. I think in this case very little was. But it is becoming harder to make that call. Someone not proficient in programming won't be able to at all, and in time I won't be able to either as things become higher quality and vibe coding slowly becomes indistinguishable from human programming.
 
-## Relying
+### Relying
 I don't want to touch these projects or rely on them as the tech debt will stack up overtime, and likely already has, as AI isn't quite there yet and will happily build pillars upon pillars of misconception and misunderstandings, something it takes an actual human developer to detect and steer it out of.
 
 But what'll happen when hobbyists like me, or even seasoned programmers, start to become unable to recognize vibe coding and start relying on these pieces of software, which may have severe underlying issues that simply haven't been noticed yet..
 
 What if we already rely on that kind of software? How likely is that?
 
-## Ramifications
+### Ramifications
 Even the blog you're reading this on depends on hundreds of packages I have no control over, some of which maybe even vibe-coded. 
 Granted, this is a blog, not some critical piece of software, but with the amount of vulnerabilities that are popping up left and right or packages being hijacked/compromised with malicious code, writing this was done in Visual Studio Code without actually locally running the blog software, because I don't feel comfortable doing so given the hundreds of packages.
 
@@ -37,10 +37,10 @@ At least the way the blog software (Docusaurus) works is that it outputs a simpl
 
 But what of software that has wider access to our PCs/livelihoods? What about my software?
 
-## Retaining control
+### Retaining control
 Lets take [wow.tools.local](https://github.com/Marlamin/wow.tools.local) (WTL) for example. Something I develop but also run on my PC almost every single day. I obviously want it to be secure, not only for myself but also for other users. But how much of that do I really control?
 
-As of the upcoming version, I've replaced most of the major packages it relies on either with things I maintain or things I largely trust to not be malicious, insecure and not vibe-coded.
+As of the upcoming version, I've largely finished replacing most of the external dependencies it relies on either with things I maintain or things I largely trust to not be malicious, not insecure and not vibe-coded.
 
 Projects WTL relies on that I maintain/have first-hand knowledge of:
 - [TACTSharp](https://github.com/wowdev/TACTSharp) (downloads/interacts with WoWs filesystem)
@@ -55,8 +55,8 @@ Projects WTL relies on that I maintain/have first-hand knowledge of:
 - [wow-listfile](https://github.com/wowdev/wow-listfile/) (filenames for WoW files)
 - [BLPSharp](https://github.com/wowdev/BLPSharp) (reading BLP files)
 
-Now, that's quite the list of things. I know how all of these things work because I've either made them myself or adopted and maintained from previous authors, but understand deep enough to have complete knowledge of.
-I won't claim that they're flawless, if anything I'll admit many are flawed, but I know how they work and what those flaws are.
+Now, that's quite the list of things. I know how all of these things work because I've either made them myself or adopted/maintained them from previous authors, but understand deep enough to have complete knowledge of.
+I won't claim that they're flawless, if anything I'll admit many are flawed, but I know how they work and what most of those flaws are.
 
 But lets keep going. There's also projects WTL relies/relied on that I don't maintain or have knowledge of their inner workings off:
 - [Bootstrap](https://getbootstrap.com/) (UI framework)
@@ -76,7 +76,7 @@ There are exceptions though, but I try to stick with either industry standard or
 ...but lets keep going. What about projects that the above projects rely on? I try to keep external dependencies to minimum for the projects in the first list, with exceptions.
 The projects in the second list? That's where things get more vague. 
 
-What about a layer deeper? *imagine that inception image*
+What about a layer deeper? **imagine that inception image**
 
 WTL runs on Microsoft's .NET framework, which as part of Windows you'd assume is pretty secure and all. Right?
 
@@ -86,7 +86,7 @@ I can keep peeling the onion layers away but this chapter is already way too big
 
 My point is: every piece of software these days relies on so many other pieces of software and we don't really know what we're running most of the time or how reliable/secure that entire stack of software is. I feel like AI (and more specifically vibe coding) is making the reliability/stability of that stack worse and likely causing more vulnerabilities than it has been solving/finding, at least with currently available/popular models. 
 
-## Reflecting
+### Reflecting
 It is clear to anyone who has been reading my blog that even before AI I had a, at the time of previous posts, more healthy habit of wanting to understand everything and preferring using things I built myself. There's been various reasons for that, both good and bad (the bad ones largely being personality faults on my end), but it has taught me many things over the years and I'm generally happy I've taken that approach to software development.
 
 But more recently I've started to recognize that that previously healthy habit is more often turning into an unhealthy paranoia in part thanks to AI (paranoAI? pAIranoia? there's a joke here somewhere). If a cool new project shows up or someone sends a pull-request/commit to software I co-maintain, I always check for the tell-tale signs of vibe coding, and if I find them I very quickly lose the motivation to further keep looking at said thing, let alone using or working on it.
@@ -97,14 +97,17 @@ This is a problem that I haven't yet been able to solve, nor do I think I really
 
 I don't really know how to fix this. There's a few things that could happen going forward.
 
-## Results
-One possible situation is that the whole AI ecosystem implodes and AI usage becomes very expensive while further development of it stagnates/stops, but I don't see that happening. AI companies are propping eachother up and governments/stock markets are continously pumping huge amounts of money into them. **Result:** not happening.
+### Results
+One possible situation is that the whole AI ecosystem implodes and AI usage becomes very expensive while further development of it stagnates/stops, but I don't see that happening. AI companies are propping eachother up and governments/stock markets are continously pumping huge amounts of money into them.  
+**Result:** not happening.
 
-Another option is that AI models become so good that even vibe-coded things are as secure, reliable and performant as a human could write them, or even going beyond that. But that brings its own slew of worries and problems with it, many of which I don't even want to think about. **Result:** Definitely need to take up another profession.
+Another option is that AI models become so good that even vibe-coded things are as secure, reliable and performant as a human could write them, or even going beyond that. But that brings its own slew of worries and problems with it, many of which I don't even want to think about.  
+**Result:** Definitely need to take up another profession.
 
-A more likely scenario is that a combination of both will happen, but in a way where only the richer are able to pay for and use the good models leading to them getting richer (classic!), while everyone else is limited to using less capable/self-hosted models that will fall behind more and more compared to their big brother counterparts. Arguably, this is already happening. **Result:** My extremely niche expertise could still be relevant, but I think that is already almost no longer the case, even for locally hosted models, so I might already be screwed in that regard as well. 
+A more likely scenario is that a combination of both will happen, but in a way where only the richer are able to pay for and use the good models leading to them getting richer (classic!), while everyone else is limited to using less capable/self-hosted models that will fall behind more and more compared to their big brother counterparts. Arguably, this is already happening.  
+**Result:** My extremely niche expertise could still be relevant, but I think that is already almost no longer the case, even for locally hosted models, so I might already be screwed in that regard as well. 
 
-## Realization
-We'll see what ends up happening and where things go. I'm closer than ever before in throwing in the towel. Me not wanting to change [my stance on AI](/genai-rant) likely already has resulted in irreversable damage to my standing compared to my peers. I don't see any way forward that leads to a positive outcome for me (or even the industry/humanity in general) without (further) compromising my morals/accepting defeat, so this blog post simply ends at a depressing impasse. 
+### Realization
+We'll see what ends up happening and where things go. I'm closer than ever before in throwing in the programming towel. Me not wanting to change [my stance on AI](/genai-rant) likely already has resulted in irreversable damage to my standing compared to my peers. I don't see any way forward that leads to a positive outcome for me (or even the industry/humanity in general) without (further) compromising my morals/accepting defeat, so this blog post simply ends at a depressing impasse. 
 
 For now I'm just going to keep carrying on trying to find enjoyment in the things I make for myself. It might effectively be a downwards slope, but it is better than getting on what I feel like is that rollercoaster to hell. Maybe I really do need a change in profession.
